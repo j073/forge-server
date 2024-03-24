@@ -10,9 +10,6 @@ export default defineNuxtConfig({
       });
     }
   },
-  i18n: {
-  langDir: 'locales',
-  },
   loadingIndicator: {
     name: 'chasing-dots',
     color: 'purple',
