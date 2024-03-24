@@ -1,6 +1,6 @@
 <template>
     <div class="livechat-container">
-      <a href="https://www.livechat.com/chat-with/13260753/" rel="nofollow"></a>
+      <a href="https://www.livechat.com/chat-with/15368679/" rel="nofollow"></a>
       <a href="https://www.livechat.com/?welcome" rel="noopener nofollow" target="_blank"></a>
     </div>
   </template>
@@ -9,7 +9,7 @@
   export default {
     mounted() {
       window.__lc = window.__lc || {};
-      window.__lc.license = 13260753;
+      window.__lc.license = 15368679;
       function i(n) {
         return e._h ? e._h.apply(null, n) : e._q.push(n);
       }

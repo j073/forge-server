@@ -1,0 +1,258 @@
+{
+  "resolvedId": "C:/xampp/htdocs/jxj/nuxt-deno-rajamahjong/node_modules/@nuxt/image/dist/runtime/utils/meta.mjs",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "export async function imageMeta(_ctx, url) {\n  const meta = await _imageMeta(url).catch((err) => {\n    console.error(\"Failed to get image meta for \" + url, err + \"\");\n    return {\n      width: 0,\n      height: 0,\n      ratio: 0\n    };\n  });\n  return meta;\n}\nasync function _imageMeta(url) {\n  if (process.server) {\n    const imageMeta2 = await import(\"image-meta\").then((r) => r.imageMeta);\n    const data = await fetch(url).then((res) => res.buffer());\n    const metadata = imageMeta2(data);\n    if (!metadata) {\n      throw new Error(`No metadata could be extracted from the image \\`${url}\\`.`);\n    }\n    const { width, height } = metadata;\n    const meta = {\n      width,\n      height,\n      ratio: width && height ? width / height : void 0\n    };\n    return meta;\n  }\n  if (typeof Image === \"undefined\") {\n    throw new TypeError(\"Image not supported\");\n  }\n  return new Promise((resolve, reject) => {\n    const img = new Image();\n    img.onload = () => {\n      const meta = {\n        width: img.width,\n        height: img.height,\n        ratio: img.width / img.height\n      };\n      resolve(meta);\n    };\n    img.onerror = (err) => reject(err);\n    img.src = url;\n  });\n}\n",
+      "start": 1711225700955,
+      "end": 1711225700956,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1711225700956,
+      "end": 1711225700956,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1711225700956,
+      "end": 1711225700956,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1711225700956,
+      "end": 1711225700956,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1711225700956,
+      "end": 1711225700956,
+      "order": "pre"
+    },
+    {
+      "name": "transform-file",
+      "result": "export async function imageMeta(_ctx, url) {\n  const meta = await _imageMeta(url).catch((err) => {\n    console.error(\"Failed to get image meta for \" + url, err + \"\");\n    return {\n      width: 0,\n      height: 0,\n      ratio: 0\n    };\n  });\n  return meta;\n}\nasync function _imageMeta(url) {\n  if (process.server) {\n    const imageMeta2 = await import(\"image-meta\").then((r) => r.imageMeta);\n    const data = await fetch(url).then((res) => res.buffer());\n    const metadata = imageMeta2(data);\n    if (!metadata) {\n      throw new Error(`No metadata could be extracted from the image \\`${url}\\`.`);\n    }\n    const { width, height } = metadata;\n    const meta = {\n      width,\n      height,\n      ratio: width && height ? width / height : void 0\n    };\n    return meta;\n  }\n  if (typeof Image === \"undefined\") {\n    throw new TypeError(\"Image not supported\");\n  }\n  return new Promise((resolve, reject) => {\n    const img = new Image();\n    img.onload = () => {\n      const meta = {\n        width: img.width,\n        height: img.height,\n        ratio: img.width / img.height\n      };\n      resolve(meta);\n    };\n    img.onerror = (err) => reject(err);\n    img.src = url;\n  });\n}\n",
+      "start": 1711225700956,
+      "end": 1711225700956,
+      "order": "pre",
+      "sourcemaps": null
+    },
+    {
+      "name": "transform-file",
+      "result": "export async function imageMeta(_ctx, url) {\n  const meta = await _imageMeta(url).catch((err) => {\n    console.error(\"Failed to get image meta for \" + url, err + \"\");\n    return {\n      width: 0,\n      height: 0,\n      ratio: 0\n    };\n  });\n  return meta;\n}\nasync function _imageMeta(url) {\n  if (process.server) {\n    const imageMeta2 = await import(\"image-meta\").then((r) => r.imageMeta);\n    const data = await fetch(url).then((res) => res.buffer());\n    const metadata = imageMeta2(data);\n    if (!metadata) {\n      throw new Error(`No metadata could be extracted from the image \\`${url}\\`.`);\n    }\n    const { width, height } = metadata;\n    const meta = {\n      width,\n      height,\n      ratio: width && height ? width / height : void 0\n    };\n    return meta;\n  }\n  if (typeof Image === \"undefined\") {\n    throw new TypeError(\"Image not supported\");\n  }\n  return new Promise((resolve, reject) => {\n    const img = new Image();\n    img.onload = () => {\n      const meta = {\n        width: img.width,\n        height: img.height,\n        ratio: img.width / img.height\n      };\n      resolve(meta);\n    };\n    img.onerror = (err) => reject(err);\n    img.src = url;\n  });\n}\n",
+      "start": 1711225700956,
+      "end": 1711225700956,
+      "order": "pre",
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1711225700956,
+      "end": 1711225700956,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1711225700956,
+      "end": 1711225700956,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1711225700956,
+      "end": 1711225700956,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1711225700956,
+      "end": 1711225700956,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1711225700956,
+      "end": 1711225700956,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1711225700956,
+      "end": 1711225700956,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1711225700956,
+      "end": 1711225700956,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1711225700956,
+      "end": 1711225700956,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1711225700956,
+      "end": 1711225700956,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1711225700956,
+      "end": 1711225700956,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1711225700956,
+      "end": 1711225700956,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1711225700956,
+      "end": 1711225700956,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1711225700956,
+      "end": 1711225700956,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1711225700956,
+      "end": 1711225700956,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1711225700956,
+      "end": 1711225700956,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "result": "export async function imageMeta(_ctx, url) {\n  const meta = await _imageMeta(url).catch((err) => {\n    console.error(\"Failed to get image meta for \" + url, err + \"\");\n    return {\n      width: 0,\n      height: 0,\n      ratio: 0\n    };\n  });\n  return meta;\n}\nasync function _imageMeta(url) {\n  if (true) {\n    const imageMeta2 = await import(\"image-meta\").then((r) => r.imageMeta);\n    const data = await fetch(url).then((res) => res.buffer());\n    const metadata = imageMeta2(data);\n    if (!metadata) {\n      throw new Error(`No metadata could be extracted from the image \\`${url}\\`.`);\n    }\n    const { width, height } = metadata;\n    const meta = {\n      width,\n      height,\n      ratio: width && height ? width / height : void 0\n    };\n    return meta;\n  }\n  if (typeof Image === \"undefined\") {\n    throw new TypeError(\"Image not supported\");\n  }\n  return new Promise((resolve, reject) => {\n    const img = new Image();\n    img.onload = () => {\n      const meta = {\n        width: img.width,\n        height: img.height,\n        ratio: img.width / img.height\n      };\n      resolve(meta);\n    };\n    img.onerror = (err) => reject(err);\n    img.src = url;\n  });\n}\n",
+      "start": 1711225700956,
+      "end": 1711225700957,
+      "order": "normal",
+      "sourcemaps": "{\n  \"version\": 3,\n  \"sources\": [\"C:/xampp/htdocs/jxj/nuxt-deno-rajamahjong/node_modules/@nuxt/image/dist/runtime/utils/meta.mjs\"],\n  \"sourcesContent\": [\"export async function imageMeta(_ctx, url) {\\n  const meta = await _imageMeta(url).catch((err) => {\\n    console.error(\\\"Failed to get image meta for \\\" + url, err + \\\"\\\");\\n    return {\\n      width: 0,\\n      height: 0,\\n      ratio: 0\\n    };\\n  });\\n  return meta;\\n}\\nasync function _imageMeta(url) {\\n  if (process.server) {\\n    const imageMeta2 = await import(\\\"image-meta\\\").then((r) => r.imageMeta);\\n    const data = await fetch(url).then((res) => res.buffer());\\n    const metadata = imageMeta2(data);\\n    if (!metadata) {\\n      throw new Error(`No metadata could be extracted from the image \\\\`${url}\\\\`.`);\\n    }\\n    const { width, height } = metadata;\\n    const meta = {\\n      width,\\n      height,\\n      ratio: width && height ? width / height : void 0\\n    };\\n    return meta;\\n  }\\n  if (typeof Image === \\\"undefined\\\") {\\n    throw new TypeError(\\\"Image not supported\\\");\\n  }\\n  return new Promise((resolve, reject) => {\\n    const img = new Image();\\n    img.onload = () => {\\n      const meta = {\\n        width: img.width,\\n        height: img.height,\\n        ratio: img.width / img.height\\n      };\\n      resolve(meta);\\n    };\\n    img.onerror = (err) => reject(err);\\n    img.src = url;\\n  });\\n}\\n\"],\n  \"mappings\": \"AAAA,sBAAsB,UAAU,MAAM,KAAK;AACzC,QAAM,OAAO,MAAM,WAAW,GAAG,EAAE,MAAM,CAAC,QAAQ;AAChD,YAAQ,MAAM,kCAAkC,KAAK,MAAM,EAAE;AAC7D,WAAO;AAAA,MACL,OAAO;AAAA,MACP,QAAQ;AAAA,MACR,OAAO;AAAA,IACT;AAAA,EACF,CAAC;AACD,SAAO;AACT;AACA,eAAe,WAAW,KAAK;AAC7B,MAAI,MAAgB;AAClB,UAAM,aAAa,MAAM,OAAO,YAAY,EAAE,KAAK,CAAC,MAAM,EAAE,SAAS;AACrE,UAAM,OAAO,MAAM,MAAM,GAAG,EAAE,KAAK,CAAC,QAAQ,IAAI,OAAO,CAAC;AACxD,UAAM,WAAW,WAAW,IAAI;AAChC,QAAI,CAAC,UAAU;AACb,YAAM,IAAI,MAAM,mDAAmD,GAAG,KAAK;AAAA,IAC7E;AACA,UAAM,EAAE,OAAO,OAAO,IAAI;AAC1B,UAAM,OAAO;AAAA,MACX;AAAA,MACA;AAAA,MACA,OAAO,SAAS,SAAS,QAAQ,SAAS;AAAA,IAC5C;AACA,WAAO;AAAA,EACT;AACA,MAAI,OAAO,UAAU,aAAa;AAChC,UAAM,IAAI,UAAU,qBAAqB;AAAA,EAC3C;AACA,SAAO,IAAI,QAAQ,CAAC,SAAS,WAAW;AACtC,UAAM,MAAM,IAAI,MAAM;AACtB,QAAI,SAAS,MAAM;AACjB,YAAM,OAAO;AAAA,QACX,OAAO,IAAI;AAAA,QACX,QAAQ,IAAI;AAAA,QACZ,OAAO,IAAI,QAAQ,IAAI;AAAA,MACzB;AACA,cAAQ,IAAI;AAAA,IACd;AACA,QAAI,UAAU,CAAC,QAAQ,OAAO,GAAG;AACjC,QAAI,MAAM;AAAA,EACZ,CAAC;AACH;\",\n  \"names\": []\n}\n"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1711225700957,
+      "end": 1711225700957,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1711225700957,
+      "end": 1711225700957,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1711225700957,
+      "end": 1711225700957,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1711225700958,
+      "end": 1711225700958,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1711225700958,
+      "end": 1711225700958,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1711225700958,
+      "end": 1711225700958,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1711225700958,
+      "end": 1711225700958,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1711225700958,
+      "end": 1711225700958,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1711225700958,
+      "end": 1711225700958,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1711225700958,
+      "end": 1711225700958,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1711225700958,
+      "end": 1711225700958,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1711225700958,
+      "end": 1711225700958,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1711225700958,
+      "end": 1711225700958,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1711225700958,
+      "end": 1711225700958,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1711225700958,
+      "end": 1711225700958,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1711225700958,
+      "end": 1711225700958,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1711225700958,
+      "end": 1711225700958,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1711225700958,
+      "end": 1711225700958,
+      "order": "normal"
+    }
+  ]
+}

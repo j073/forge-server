@@ -1,0 +1,210 @@
+{
+  "resolvedId": "C:/xampp/htdocs/jxj/nuxt-deno-rajamahjong/components/Livechat.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\r\n    <div class=\"livechat-container\">\r\n      <a href=\"https://www.livechat.com/chat-with/15368679/\" rel=\"nofollow\"></a>\r\n      <a href=\"https://www.livechat.com/?welcome\" rel=\"noopener nofollow\" target=\"_blank\"></a>\r\n    </div>\r\n  </template>\r\n  \r\n  <script>\r\n  export default {\r\n    mounted() {\r\n      window.__lc = window.__lc || {};\r\n      window.__lc.license = 15368679;\r\n      function i(n) {\r\n        return e._h ? e._h.apply(null, n) : e._q.push(n);\r\n      }\r\n      const e = {\r\n        _q: [],\r\n        _h: null,\r\n        _v: \"2.0\",\r\n        on() {\r\n          i([\"on\", Array.prototype.slice.call(arguments)]);\r\n        },\r\n        once() {\r\n          i([\"once\", Array.prototype.slice.call(arguments)]);\r\n        },\r\n        off() {\r\n          i([\"off\", Array.prototype.slice.call(arguments)]);\r\n        },\r\n        get() {\r\n          if (!e._h) throw new Error(\"[LiveChatWidget] You can't use getters before load.\");\r\n          return i([\"get\", Array.prototype.slice.call(arguments)]);\r\n        },\r\n        call() {\r\n          i([\"call\", Array.prototype.slice.call(arguments)]);\r\n        },\r\n        init() {\r\n          const n = document.createElement(\"script\");\r\n          n.async = true;\r\n          n.type = \"text/javascript\";\r\n          n.src = \"https://cdn.livechatinc.com/tracking.js\";\r\n          document.head.appendChild(n);\r\n        }\r\n      };\r\n      if (!window.__lc.asyncInit) {\r\n        e.init();\r\n      }\r\n      window.LiveChatWidget = e;\r\n  \r\n      const liveChatLink = document.querySelector('.livechat-container a');\r\n      liveChatLink.addEventListener('click', (event) => {\r\n        event.preventDefault();\r\n      });\r\n    }\r\n  };\r\n  </script>",
+      "start": 1711225697391,
+      "end": 1711225697514,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1711225697514,
+      "end": 1711225697514,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1711225697515,
+      "end": 1711225697515,
+      "order": "pre"
+    },
+    {
+      "name": "transform-file",
+      "result": "<template>\r\n    <div class=\"livechat-container\">\r\n      <a href=\"https://www.livechat.com/chat-with/15368679/\" rel=\"nofollow\"></a>\r\n      <a href=\"https://www.livechat.com/?welcome\" rel=\"noopener nofollow\" target=\"_blank\"></a>\r\n    </div>\r\n  </template>\r\n  \r\n  <script>\r\n  export default {\r\n    mounted() {\r\n      window.__lc = window.__lc || {};\r\n      window.__lc.license = 15368679;\r\n      function i(n) {\r\n        return e._h ? e._h.apply(null, n) : e._q.push(n);\r\n      }\r\n      const e = {\r\n        _q: [],\r\n        _h: null,\r\n        _v: \"2.0\",\r\n        on() {\r\n          i([\"on\", Array.prototype.slice.call(arguments)]);\r\n        },\r\n        once() {\r\n          i([\"once\", Array.prototype.slice.call(arguments)]);\r\n        },\r\n        off() {\r\n          i([\"off\", Array.prototype.slice.call(arguments)]);\r\n        },\r\n        get() {\r\n          if (!e._h) throw new Error(\"[LiveChatWidget] You can't use getters before load.\");\r\n          return i([\"get\", Array.prototype.slice.call(arguments)]);\r\n        },\r\n        call() {\r\n          i([\"call\", Array.prototype.slice.call(arguments)]);\r\n        },\r\n        init() {\r\n          const n = document.createElement(\"script\");\r\n          n.async = true;\r\n          n.type = \"text/javascript\";\r\n          n.src = \"https://cdn.livechatinc.com/tracking.js\";\r\n          document.head.appendChild(n);\r\n        }\r\n      };\r\n      if (!window.__lc.asyncInit) {\r\n        e.init();\r\n      }\r\n      window.LiveChatWidget = e;\r\n  \r\n      const liveChatLink = document.querySelector('.livechat-container a');\r\n      liveChatLink.addEventListener('click', (event) => {\r\n        event.preventDefault();\r\n      });\r\n    }\r\n  };\r\n  </script>",
+      "start": 1711225697515,
+      "end": 1711225697515,
+      "order": "pre",
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1711225697515,
+      "end": 1711225697515,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1711225697515,
+      "end": 1711225697515,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1711225697515,
+      "end": 1711225697515,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1711225697515,
+      "end": 1711225697515,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1711225697515,
+      "end": 1711225697515,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\r\n  const _sfc_main = {\r\n    mounted() {\r\n      window.__lc = window.__lc || {};\r\n      window.__lc.license = 15368679;\r\n      function i(n) {\r\n        return e._h ? e._h.apply(null, n) : e._q.push(n);\r\n      }\r\n      const e = {\r\n        _q: [],\r\n        _h: null,\r\n        _v: \"2.0\",\r\n        on() {\r\n          i([\"on\", Array.prototype.slice.call(arguments)]);\r\n        },\r\n        once() {\r\n          i([\"once\", Array.prototype.slice.call(arguments)]);\r\n        },\r\n        off() {\r\n          i([\"off\", Array.prototype.slice.call(arguments)]);\r\n        },\r\n        get() {\r\n          if (!e._h) throw new Error(\"[LiveChatWidget] You can't use getters before load.\");\r\n          return i([\"get\", Array.prototype.slice.call(arguments)]);\r\n        },\r\n        call() {\r\n          i([\"call\", Array.prototype.slice.call(arguments)]);\r\n        },\r\n        init() {\r\n          const n = document.createElement(\"script\");\r\n          n.async = true;\r\n          n.type = \"text/javascript\";\r\n          n.src = \"https://cdn.livechatinc.com/tracking.js\";\r\n          document.head.appendChild(n);\r\n        }\r\n      };\r\n      if (!window.__lc.asyncInit) {\r\n        e.init();\r\n      }\r\n      window.LiveChatWidget = e;\r\n  \r\n      const liveChatLink = document.querySelector('.livechat-container a');\r\n      liveChatLink.addEventListener('click', (event) => {\r\n        event.preventDefault();\r\n      });\r\n    }\r\n  };\r\n  \nimport { createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = { class: \"livechat-container\" }\nconst _hoisted_2 = /*#__PURE__*/_createElementVNode(\"a\", {\n  href: \"https://www.livechat.com/chat-with/15368679/\",\n  rel: \"nofollow\"\n}, null, -1)\nconst _hoisted_3 = /*#__PURE__*/_createElementVNode(\"a\", {\n  href: \"https://www.livechat.com/?welcome\",\n  rel: \"noopener nofollow\",\n  target: \"_blank\"\n}, null, -1)\nconst _hoisted_4 = [\n  _hoisted_2,\n  _hoisted_3\n]\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, _hoisted_4))\n}\n\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render]])",
+      "start": 1711225697515,
+      "end": 1711225697520,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1711225697520,
+      "end": 1711225697520,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1711225697520,
+      "end": 1711225697520,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1711225697520,
+      "end": 1711225697520,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1711225697520,
+      "end": 1711225697520,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1711225697520,
+      "end": 1711225697520,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1711225697520,
+      "end": 1711225697520,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1711225697520,
+      "end": 1711225697520,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1711225697520,
+      "end": 1711225697520,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1711225697520,
+      "end": 1711225697520,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1711225697520,
+      "end": 1711225697520,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1711225697520,
+      "end": 1711225697520,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1711225697520,
+      "end": 1711225697520,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1711225697520,
+      "end": 1711225697520,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1711225697520,
+      "end": 1711225697520,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1711225697520,
+      "end": 1711225697520,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1711225697520,
+      "end": 1711225697520,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1711225697520,
+      "end": 1711225697521,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1711225697521,
+      "end": 1711225697521,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1711225697521,
+      "end": 1711225697521,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1711225697521,
+      "end": 1711225697521,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1711225697521,
+      "end": 1711225697521,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1711225697521,
+      "end": 1711225697521,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1711225697521,
+      "end": 1711225697521,
+      "order": "normal"
+    }
+  ]
+}

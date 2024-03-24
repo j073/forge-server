@@ -1,0 +1,210 @@
+{
+  "resolvedId": "C:/xampp/htdocs/jxj/nuxt-deno-rajamahjong/components/Checkup.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\r\n    \r\n    <div v-if=\"titleCheck !== null\">\r\n      <p style=\"color: white;\">{{ titleCheck }}</p>\r\n    </div>\r\n  \r\n  </template>\r\n  \r\n  <script setup>\r\n  import { ref, onMounted } from 'vue';\r\n  const titleCheck = ref('Server sedang dimuat...');\r\n  \r\n  const fetchCheckup = async () => {\r\n    try {\r\n      const response = await $fetch('https://152.42.160.119/data/nuxt/checkup', {\r\n        method: 'GET',\r\n      });\r\n      const jsonData = await response;\r\n      const getData = jsonData.checkSetup[0]?.title_updated ?? 'Server sedang dimuat...';\r\n      titleCheck.value = getData;\r\n    } catch (error) {\r\n      console.error(error);\r\n    }\r\n  }\r\n  onMounted(fetchCheckup);\r\n  </script>",
+      "start": 1711225697395,
+      "end": 1711225697536,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1711225697536,
+      "end": 1711225697536,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1711225697536,
+      "end": 1711225697536,
+      "order": "pre"
+    },
+    {
+      "name": "transform-file",
+      "result": "<template>\r\n    \r\n    <div v-if=\"titleCheck !== null\">\r\n      <p style=\"color: white;\">{{ titleCheck }}</p>\r\n    </div>\r\n  \r\n  </template>\r\n  \r\n  <script setup>\r\n  import { ref, onMounted } from 'vue';\r\n  const titleCheck = ref('Server sedang dimuat...');\r\n  \r\n  const fetchCheckup = async () => {\r\n    try {\r\n      const response = await $fetch('https://152.42.160.119/data/nuxt/checkup', {\r\n        method: 'GET',\r\n      });\r\n      const jsonData = await response;\r\n      const getData = jsonData.checkSetup[0]?.title_updated ?? 'Server sedang dimuat...';\r\n      titleCheck.value = getData;\r\n    } catch (error) {\r\n      console.error(error);\r\n    }\r\n  }\r\n  onMounted(fetchCheckup);\r\n  </script>",
+      "start": 1711225697536,
+      "end": 1711225697536,
+      "order": "pre",
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1711225697536,
+      "end": 1711225697536,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1711225697536,
+      "end": 1711225697536,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1711225697536,
+      "end": 1711225697536,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1711225697536,
+      "end": 1711225697536,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1711225697536,
+      "end": 1711225697536,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import { toDisplayString as _toDisplayString, createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode } from \"vue\"\n\nconst _hoisted_1 = { key: 0 }\nconst _hoisted_2 = { style: {\"color\":\"white\"} }\n\nimport { ref, onMounted } from 'vue';\r\n  \nconst _sfc_main = {\n  __name: 'Checkup',\n  setup(__props) {\n\r\n  const titleCheck = ref('Server sedang dimuat...');\r\n  \r\n  const fetchCheckup = async () => {\r\n    try {\r\n      const response = await $fetch('https://152.42.160.119/data/nuxt/checkup', {\r\n        method: 'GET',\r\n      });\r\n      const jsonData = await response;\r\n      const getData = jsonData.checkSetup[0]?.title_updated ?? 'Server sedang dimuat...';\r\n      titleCheck.value = getData;\r\n    } catch (error) {\r\n      console.error(error);\r\n    }\r\n  }\r\n  onMounted(fetchCheckup);\r\n  \nreturn (_ctx, _cache) => {\n  return (titleCheck.value !== null)\n    ? (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        _createElementVNode(\"p\", _hoisted_2, _toDisplayString(titleCheck.value), 1)\n      ]))\n    : _createCommentVNode(\"\", true)\n}\n}\n\n}\n\n\n\nexport default _sfc_main",
+      "start": 1711225697536,
+      "end": 1711225697540,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1711225697540,
+      "end": 1711225697540,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1711225697540,
+      "end": 1711225697540,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1711225697540,
+      "end": 1711225697540,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1711225697540,
+      "end": 1711225697540,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1711225697540,
+      "end": 1711225697540,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1711225697540,
+      "end": 1711225697540,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1711225697540,
+      "end": 1711225697540,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1711225697540,
+      "end": 1711225697540,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1711225697540,
+      "end": 1711225697540,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1711225697540,
+      "end": 1711225697540,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1711225697540,
+      "end": 1711225697540,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1711225697540,
+      "end": 1711225697540,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1711225697540,
+      "end": 1711225697540,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1711225697540,
+      "end": 1711225697540,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1711225697540,
+      "end": 1711225697540,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1711225697540,
+      "end": 1711225697540,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1711225697540,
+      "end": 1711225697540,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1711225697540,
+      "end": 1711225697540,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1711225697540,
+      "end": 1711225697540,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1711225697540,
+      "end": 1711225697541,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1711225697541,
+      "end": 1711225697541,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1711225697541,
+      "end": 1711225697541,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1711225697541,
+      "end": 1711225697541,
+      "order": "normal"
+    }
+  ]
+}

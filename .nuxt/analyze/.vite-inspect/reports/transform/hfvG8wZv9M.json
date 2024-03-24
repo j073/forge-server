@@ -1,0 +1,209 @@
+{
+  "resolvedId": "C:/xampp/htdocs/jxj/nuxt-deno-rajamahjong/components/footer.layout.jsx",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "export default function FooterLayout () {\r\n    return (\r\n        <>\r\n        <footer className=\"fugu--footer-section\">\r\n        <div className=\"container\">\r\n                <Livechat/>\r\n                <div className=\"fugu--footer-bottom\" style={{color: \"white\"}}>© Copyright 2024 All Rights Reserved by RAJAMAHJONG</div>\r\n        </div>\r\n        </footer>\r\n        </>\r\n    );\r\n}",
+      "start": 1711225697195,
+      "end": 1711225697270,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1711225697271,
+      "end": 1711225697271,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1711225697271,
+      "end": 1711225697271,
+      "order": "pre"
+    },
+    {
+      "name": "transform-file",
+      "result": "export default function FooterLayout () {\r\n    return (\r\n        <>\r\n        <footer className=\"fugu--footer-section\">\r\n        <div className=\"container\">\r\n                <Livechat/>\r\n                <div className=\"fugu--footer-bottom\" style={{color: \"white\"}}>© Copyright 2024 All Rights Reserved by RAJAMAHJONG</div>\r\n        </div>\r\n        </footer>\r\n        </>\r\n    );\r\n}",
+      "start": 1711225697271,
+      "end": 1711225697271,
+      "order": "pre",
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1711225697271,
+      "end": 1711225697271,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1711225697271,
+      "end": 1711225697271,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1711225697271,
+      "end": 1711225697271,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1711225697271,
+      "end": 1711225697271,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1711225697271,
+      "end": 1711225697271,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1711225697271,
+      "end": 1711225697271,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "result": "import { createTextVNode as _createTextVNode, createVNode as _createVNode, resolveComponent as _resolveComponent, Fragment as _Fragment } from \"vue\";\nexport default function FooterLayout() {\n  return _createVNode(_Fragment, null, [_createVNode(\"footer\", {\n    \"className\": \"fugu--footer-section\"\n  }, [_createVNode(\"div\", {\n    \"className\": \"container\"\n  }, [_createVNode(_resolveComponent(\"Livechat\"), null, null), _createVNode(\"div\", {\n    \"className\": \"fugu--footer-bottom\",\n    \"style\": {\n      color: \"white\"\n    }\n  }, [_createTextVNode(\"\\xA9 Copyright 2024 All Rights Reserved by RAJAMAHJONG\")])])])]);\n}",
+      "start": 1711225697271,
+      "end": 1711225697312,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "replace",
+      "start": 1711225697312,
+      "end": 1711225697312,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1711225697312,
+      "end": 1711225697312,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1711225697312,
+      "end": 1711225697312,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1711225697312,
+      "end": 1711225697312,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1711225697312,
+      "end": 1711225697312,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1711225697312,
+      "end": 1711225697312,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1711225697312,
+      "end": 1711225697312,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1711225697312,
+      "end": 1711225697312,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1711225697312,
+      "end": 1711225697312,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1711225697312,
+      "end": 1711225697312,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1711225697312,
+      "end": 1711225697312,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1711225697312,
+      "end": 1711225697312,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1711225697312,
+      "end": 1711225697312,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1711225697312,
+      "end": 1711225697312,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1711225697312,
+      "end": 1711225697312,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1711225697312,
+      "end": 1711225697313,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1711225697313,
+      "end": 1711225697313,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1711225697313,
+      "end": 1711225697313,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "result": "import { default as __nuxt_component_0 } from \"C:/xampp/htdocs/jxj/nuxt-deno-rajamahjong/components/Livechat.vue\";\nimport { createTextVNode as _createTextVNode, createVNode as _createVNode, resolveComponent as _resolveComponent, Fragment as _Fragment } from \"vue\";\nexport default function FooterLayout() {\n  return _createVNode(_Fragment, null, [_createVNode(\"footer\", {\n    \"className\": \"fugu--footer-section\"\n  }, [_createVNode(\"div\", {\n    \"className\": \"container\"\n  }, [_createVNode(__nuxt_component_0, null, null), _createVNode(\"div\", {\n    \"className\": \"fugu--footer-bottom\",\n    \"style\": {\n      color: \"white\"\n    }\n  }, [_createTextVNode(\"\\xA9 Copyright 2024 All Rights Reserved by RAJAMAHJONG\")])])])]);\n}",
+      "start": 1711225697313,
+      "end": 1711225697313,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1711225697313,
+      "end": 1711225697313,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1711225697313,
+      "end": 1711225697313,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1711225697313,
+      "end": 1711225697313,
+      "order": "normal"
+    }
+  ]
+}

@@ -1,0 +1,208 @@
+{
+  "resolvedId": "C:/xampp/htdocs/jxj/nuxt-deno-rajamahjong/components/header.layout.jsx",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "import React, {useState, useEffect } from 'react';\r\n\r\nfunction HeaderLayout () {\r\n   \r\n    function mobileMenu(e) {\r\n        e.preventDefault();\r\n        var element = document.getElementById(\"append-menu-header\");\r\n        element.classList.add(\"active\");\r\n    }\r\n\r\n    function closeMenu(e) {\r\n        e.preventDefault();\r\n        var element = document.getElementById(\"append-menu-header\");\r\n        element.classList.remove(\"active\");\r\n    }\r\n\r\n    return (\r\n        <>\r\n        <header className=\"site-header site-header--menu-right fugu--header-section fugu--header-three \" id=\"sticky-menu\">\r\n            <div className=\"container-fluid\">\r\n                <nav className=\"navbar site-navbar\">\r\n                    <div className=\"brand-logo\"><a href=\"/\" aria-label=\"Great RAJAZEUS\"><noscript>\r\n                                <img id=\"logobrand\" alt=\"\" srcSet=\"./assets/img/logorz.webp 1x, /images/nextImageExportOptimizer/logortpgroup-opt-384.WEBP 2x\"\r\n                                    src=\"https://it-cgg.b-cdn.net/rtp/rmj/999f3b90-5abf-4ec3-8c68-3f9def53cb01.webp\" width=\"350\"\r\n                                    height=\"45\" decoding=\"async\" data-nimg=\"1\" className=\"light-version-logo\" loading=\"lazy\"\r\n                                    style={{ color: \"transparent\"}} /></noscript>\r\n                                <img id=\"logobrand\" alt=\"\" srcSet=\"https://it-cgg.b-cdn.net/rtp/rmj/999f3b90-5abf-4ec3-8c68-3f9def53cb01.webp\"\r\n                                src=\"https://it-cgg.b-cdn.net/rtp/rmj/999f3b90-5abf-4ec3-8c68-3f9def53cb01.webp\" width=\"350\" height=\"45\"\r\n                                decoding=\"async\" data-nimg=\"1\" className=\"light-version-logo\" loading=\"lazy\"/><svg\r\n                                style={{ width: \"auto\", maxHeight: \"100%\", border: 0, clip: \"rect(0 0 0 0)\", height: 0, margin: \"-1px\", overflow: \"hidden\", padding: 0, position: \"absolute\", width: \"1px\" }}>\r\n                                <filter id=\"sharpBlur\">\r\n                                    <feGaussianBlur stdDeviation=\"20\" colorInterpolationFilters='sRGB'>\r\n                                    </feGaussianBlur>\r\n                                    <feColorMatrix type=\"matrix\" colorInterpolationFilters='sRGB'\r\n                                        values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 9 0\"></feColorMatrix>\r\n                                    <feComposite in2=\"SourceGraphic\" operator=\"in\"></feComposite>\r\n                                </filter>\r\n                            </svg></a>\r\n                            </div>\r\n                            <div className=\"header-btn desktop header-btn-l1 ms-auto d-flex d-none d-xs-inline-flex\">\r\n                                <a className=\"btn\" href=\"https://urlshortenertool.com/RTP-RM\" style={{ color: \"white\", marginRight: \"10px\" }}>CEK RTP SEKARANG</a>\r\n                                <a className=\"fugu--btn fugu--menu-btn1\" href=\"https://urlshortenertool.com/RTP-RM\">DAFTAR</a>\r\n                            </div>\r\n                            <div className=\"header-btn mobile\">\r\n                                <a className=\"fugu--btn fugu--menu-btn1\" style={{width: \"25px !important\", marginTop: \"15px\", marginRight: \"2.5px\", color: \"white !important\"}} href=\"https://urlshortenertool.com/RTP-RM\">Daftar</a>\r\n                            </div>\r\n                {/* <div onClick={mobileMenu}  className=\"mobile-menu-trigger\" href=\"https://urlshortenertool.com/RTP-RM\"><span></span></div> */}\r\n                </nav>\r\n                <nav className=\"menu-block\" id=\"append-menu-header\">\r\n                <div className=\"mobile-menu-head\"><div className=\"mobile-menu-close\" onClick={closeMenu}>×</div></div>\r\n                <ul className=\"site-menu-main\">\r\n                    <li className=\"nav-item nav-item-has-children desktop-d-none\">\r\n                    <ul className=\"sub-menu active nav-item\" id=\"submenu-2\">\r\n                        <li className=\"sub-menu--item\">\r\n                        <a className=\"drop-trigger\" href=\"/rtp-gbowin/\">Menu 1</a>\r\n                        </li>\r\n                        <li className=\"sub-menu--item\">\r\n                        <a className=\"drop-trigger\" href=\"/rtp-gbowin/\">Menu 2</a>\r\n                        </li>\r\n                        <li className=\"sub-menu--item\">\r\n                        <a className=\"drop-trigger\" href=\"/rtp-gbowin/\">Menu 3</a>\r\n                        </li>\r\n                        <li className=\"sub-menu--item\">\r\n                        <a className=\"drop-trigger\" href=\"/rtp-gbowin/\">Menu 4</a>\r\n                        </li>\r\n                    </ul>\r\n                    </li>\r\n                </ul>\r\n                </nav>\r\n\r\n            </div>\r\n        </header>\r\n        </>  \r\n    );\r\n};\r\n\r\nexport default HeaderLayout;",
+      "start": 1711225697195,
+      "end": 1711225697313,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1711225697313,
+      "end": 1711225697313,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1711225697313,
+      "end": 1711225697313,
+      "order": "pre"
+    },
+    {
+      "name": "transform-file",
+      "result": "import React, {useState, useEffect } from 'react';\r\n\r\nfunction HeaderLayout () {\r\n   \r\n    function mobileMenu(e) {\r\n        e.preventDefault();\r\n        var element = document.getElementById(\"append-menu-header\");\r\n        element.classList.add(\"active\");\r\n    }\r\n\r\n    function closeMenu(e) {\r\n        e.preventDefault();\r\n        var element = document.getElementById(\"append-menu-header\");\r\n        element.classList.remove(\"active\");\r\n    }\r\n\r\n    return (\r\n        <>\r\n        <header className=\"site-header site-header--menu-right fugu--header-section fugu--header-three \" id=\"sticky-menu\">\r\n            <div className=\"container-fluid\">\r\n                <nav className=\"navbar site-navbar\">\r\n                    <div className=\"brand-logo\"><a href=\"/\" aria-label=\"Great RAJAZEUS\"><noscript>\r\n                                <img v-lazy-load  id=\"logobrand\" alt=\"\" srcSet=\"./assets/img/logorz.webp 1x, /images/nextImageExportOptimizer/logortpgroup-opt-384.WEBP 2x\"\r\n                                    data-src=\"https://it-cgg.b-cdn.net/rtp/rmj/999f3b90-5abf-4ec3-8c68-3f9def53cb01.webp\" width=\"350\"\r\n                                    height=\"45\" decoding=\"async\" data-nimg=\"1\" className=\"light-version-logo\" loading=\"lazy\"\r\n                                    style={{ color: \"transparent\"}} /></noscript>\r\n                                <img v-lazy-load  id=\"logobrand\" alt=\"\" srcSet=\"https://it-cgg.b-cdn.net/rtp/rmj/999f3b90-5abf-4ec3-8c68-3f9def53cb01.webp\"\r\n                                data-src=\"https://it-cgg.b-cdn.net/rtp/rmj/999f3b90-5abf-4ec3-8c68-3f9def53cb01.webp\" width=\"350\" height=\"45\"\r\n                                decoding=\"async\" data-nimg=\"1\" className=\"light-version-logo\" loading=\"lazy\"/><svg\r\n                                style={{ width: \"auto\", maxHeight: \"100%\", border: 0, clip: \"rect(0 0 0 0)\", height: 0, margin: \"-1px\", overflow: \"hidden\", padding: 0, position: \"absolute\", width: \"1px\" }}>\r\n                                <filter id=\"sharpBlur\">\r\n                                    <feGaussianBlur stdDeviation=\"20\" colorInterpolationFilters='sRGB'>\r\n                                    </feGaussianBlur>\r\n                                    <feColorMatrix type=\"matrix\" colorInterpolationFilters='sRGB'\r\n                                        values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 9 0\"></feColorMatrix>\r\n                                    <feComposite in2=\"SourceGraphic\" operator=\"in\"></feComposite>\r\n                                </filter>\r\n                            </svg></a>\r\n                            </div>\r\n                            <div className=\"header-btn desktop header-btn-l1 ms-auto d-flex d-none d-xs-inline-flex\">\r\n                                <a className=\"btn\" href=\"https://urlshortenertool.com/RTP-RM\" style={{ color: \"white\", marginRight: \"10px\" }}>CEK RTP SEKARANG</a>\r\n                                <a className=\"fugu--btn fugu--menu-btn1\" href=\"https://urlshortenertool.com/RTP-RM\">DAFTAR</a>\r\n                            </div>\r\n                            <div className=\"header-btn mobile\">\r\n                                <a className=\"fugu--btn fugu--menu-btn1\" style={{width: \"25px !important\", marginTop: \"15px\", marginRight: \"2.5px\", color: \"white !important\"}} href=\"https://urlshortenertool.com/RTP-RM\">Daftar</a>\r\n                            </div>\r\n                {/* <div onClick={mobileMenu}  className=\"mobile-menu-trigger\" href=\"https://urlshortenertool.com/RTP-RM\"><span></span></div> */}\r\n                </nav>\r\n                <nav className=\"menu-block\" id=\"append-menu-header\">\r\n                <div className=\"mobile-menu-head\"><div className=\"mobile-menu-close\" onClick={closeMenu}>×</div></div>\r\n                <ul className=\"site-menu-main\">\r\n                    <li className=\"nav-item nav-item-has-children desktop-d-none\">\r\n                    <ul className=\"sub-menu active nav-item\" id=\"submenu-2\">\r\n                        <li className=\"sub-menu--item\">\r\n                        <a className=\"drop-trigger\" href=\"/rtp-gbowin/\">Menu 1</a>\r\n                        </li>\r\n                        <li className=\"sub-menu--item\">\r\n                        <a className=\"drop-trigger\" href=\"/rtp-gbowin/\">Menu 2</a>\r\n                        </li>\r\n                        <li className=\"sub-menu--item\">\r\n                        <a className=\"drop-trigger\" href=\"/rtp-gbowin/\">Menu 3</a>\r\n                        </li>\r\n                        <li className=\"sub-menu--item\">\r\n                        <a className=\"drop-trigger\" href=\"/rtp-gbowin/\">Menu 4</a>\r\n                        </li>\r\n                    </ul>\r\n                    </li>\r\n                </ul>\r\n                </nav>\r\n\r\n            </div>\r\n        </header>\r\n        </>  \r\n    );\r\n};\r\n\r\nexport default HeaderLayout;",
+      "start": 1711225697313,
+      "end": 1711225697313,
+      "order": "pre",
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1711225697313,
+      "end": 1711225697313,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1711225697313,
+      "end": 1711225697313,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1711225697313,
+      "end": 1711225697313,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1711225697313,
+      "end": 1711225697313,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1711225697313,
+      "end": 1711225697313,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1711225697313,
+      "end": 1711225697313,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "result": "import { createTextVNode as _createTextVNode, withDirectives as _withDirectives, createVNode as _createVNode, resolveDirective as _resolveDirective, Fragment as _Fragment } from \"vue\";\nimport React, { useState, useEffect } from 'react';\nfunction HeaderLayout() {\n  function mobileMenu(e) {\n    e.preventDefault();\n    var element = document.getElementById(\"append-menu-header\");\n    element.classList.add(\"active\");\n  }\n  function closeMenu(e) {\n    e.preventDefault();\n    var element = document.getElementById(\"append-menu-header\");\n    element.classList.remove(\"active\");\n  }\n  return _createVNode(_Fragment, null, [_createVNode(\"header\", {\n    \"className\": \"site-header site-header--menu-right fugu--header-section fugu--header-three \",\n    \"id\": \"sticky-menu\"\n  }, [_createVNode(\"div\", {\n    \"className\": \"container-fluid\"\n  }, [_createVNode(\"nav\", {\n    \"className\": \"navbar site-navbar\"\n  }, [_createVNode(\"div\", {\n    \"className\": \"brand-logo\"\n  }, [_createVNode(\"a\", {\n    \"href\": \"/\",\n    \"aria-label\": \"Great RAJAZEUS\"\n  }, [_createVNode(\"noscript\", null, [_withDirectives(_createVNode(\"img\", {\n    \"id\": \"logobrand\",\n    \"alt\": \"\",\n    \"srcSet\": \"./assets/img/logorz.webp 1x, /images/nextImageExportOptimizer/logortpgroup-opt-384.WEBP 2x\",\n    \"data-src\": \"https://it-cgg.b-cdn.net/rtp/rmj/999f3b90-5abf-4ec3-8c68-3f9def53cb01.webp\",\n    \"width\": \"350\",\n    \"height\": \"45\",\n    \"decoding\": \"async\",\n    \"data-nimg\": \"1\",\n    \"className\": \"light-version-logo\",\n    \"loading\": \"lazy\",\n    \"style\": {\n      color: \"transparent\"\n    }\n  }, null), [[_resolveDirective(\"lazy-load\")]])]), _withDirectives(_createVNode(\"img\", {\n    \"id\": \"logobrand\",\n    \"alt\": \"\",\n    \"srcSet\": \"https://it-cgg.b-cdn.net/rtp/rmj/999f3b90-5abf-4ec3-8c68-3f9def53cb01.webp\",\n    \"data-src\": \"https://it-cgg.b-cdn.net/rtp/rmj/999f3b90-5abf-4ec3-8c68-3f9def53cb01.webp\",\n    \"width\": \"350\",\n    \"height\": \"45\",\n    \"decoding\": \"async\",\n    \"data-nimg\": \"1\",\n    \"className\": \"light-version-logo\",\n    \"loading\": \"lazy\"\n  }, null), [[_resolveDirective(\"lazy-load\")]]), _createVNode(\"svg\", {\n    \"style\": {\n      width: \"auto\",\n      maxHeight: \"100%\",\n      border: 0,\n      clip: \"rect(0 0 0 0)\",\n      height: 0,\n      margin: \"-1px\",\n      overflow: \"hidden\",\n      padding: 0,\n      position: \"absolute\",\n      width: \"1px\"\n    }\n  }, [_createVNode(\"filter\", {\n    \"id\": \"sharpBlur\"\n  }, [_createVNode(\"feGaussianBlur\", {\n    \"stdDeviation\": \"20\",\n    \"colorInterpolationFilters\": \"sRGB\"\n  }, null), _createVNode(\"feColorMatrix\", {\n    \"type\": \"matrix\",\n    \"colorInterpolationFilters\": \"sRGB\",\n    \"values\": \"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 9 0\"\n  }, null), _createVNode(\"feComposite\", {\n    \"in2\": \"SourceGraphic\",\n    \"operator\": \"in\"\n  }, null)])])])]), _createVNode(\"div\", {\n    \"className\": \"header-btn desktop header-btn-l1 ms-auto d-flex d-none d-xs-inline-flex\"\n  }, [_createVNode(\"a\", {\n    \"className\": \"btn\",\n    \"href\": \"https://urlshortenertool.com/RTP-RM\",\n    \"style\": {\n      color: \"white\",\n      marginRight: \"10px\"\n    }\n  }, [_createTextVNode(\"CEK RTP SEKARANG\")]), _createVNode(\"a\", {\n    \"className\": \"fugu--btn fugu--menu-btn1\",\n    \"href\": \"https://urlshortenertool.com/RTP-RM\"\n  }, [_createTextVNode(\"DAFTAR\")])]), _createVNode(\"div\", {\n    \"className\": \"header-btn mobile\"\n  }, [_createVNode(\"a\", {\n    \"className\": \"fugu--btn fugu--menu-btn1\",\n    \"style\": {\n      width: \"25px !important\",\n      marginTop: \"15px\",\n      marginRight: \"2.5px\",\n      color: \"white !important\"\n    },\n    \"href\": \"https://urlshortenertool.com/RTP-RM\"\n  }, [_createTextVNode(\"Daftar\")])])]), _createVNode(\"nav\", {\n    \"className\": \"menu-block\",\n    \"id\": \"append-menu-header\"\n  }, [_createVNode(\"div\", {\n    \"className\": \"mobile-menu-head\"\n  }, [_createVNode(\"div\", {\n    \"className\": \"mobile-menu-close\",\n    \"onClick\": closeMenu\n  }, [_createTextVNode(\"\\xD7\")])]), _createVNode(\"ul\", {\n    \"className\": \"site-menu-main\"\n  }, [_createVNode(\"li\", {\n    \"className\": \"nav-item nav-item-has-children desktop-d-none\"\n  }, [_createVNode(\"ul\", {\n    \"className\": \"sub-menu active nav-item\",\n    \"id\": \"submenu-2\"\n  }, [_createVNode(\"li\", {\n    \"className\": \"sub-menu--item\"\n  }, [_createVNode(\"a\", {\n    \"className\": \"drop-trigger\",\n    \"href\": \"/rtp-gbowin/\"\n  }, [_createTextVNode(\"Menu 1\")])]), _createVNode(\"li\", {\n    \"className\": \"sub-menu--item\"\n  }, [_createVNode(\"a\", {\n    \"className\": \"drop-trigger\",\n    \"href\": \"/rtp-gbowin/\"\n  }, [_createTextVNode(\"Menu 2\")])]), _createVNode(\"li\", {\n    \"className\": \"sub-menu--item\"\n  }, [_createVNode(\"a\", {\n    \"className\": \"drop-trigger\",\n    \"href\": \"/rtp-gbowin/\"\n  }, [_createTextVNode(\"Menu 3\")])]), _createVNode(\"li\", {\n    \"className\": \"sub-menu--item\"\n  }, [_createVNode(\"a\", {\n    \"className\": \"drop-trigger\",\n    \"href\": \"/rtp-gbowin/\"\n  }, [_createTextVNode(\"Menu 4\")])])])])])])])])]);\n}\n;\nexport default HeaderLayout;",
+      "start": 1711225697313,
+      "end": 1711225697344,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "replace",
+      "start": 1711225697344,
+      "end": 1711225697344,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1711225697344,
+      "end": 1711225697344,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1711225697344,
+      "end": 1711225697344,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1711225697344,
+      "end": 1711225697344,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1711225697344,
+      "end": 1711225697344,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1711225697344,
+      "end": 1711225697344,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1711225697344,
+      "end": 1711225697344,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1711225697344,
+      "end": 1711225697344,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1711225697344,
+      "end": 1711225697344,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1711225697344,
+      "end": 1711225697344,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1711225697344,
+      "end": 1711225697344,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1711225697344,
+      "end": 1711225697344,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1711225697344,
+      "end": 1711225697344,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1711225697344,
+      "end": 1711225697344,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1711225697344,
+      "end": 1711225697346,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1711225697346,
+      "end": 1711225697347,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1711225697347,
+      "end": 1711225697347,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1711225697348,
+      "end": 1711225697348,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1711225697348,
+      "end": 1711225697348,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1711225697348,
+      "end": 1711225697348,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1711225697348,
+      "end": 1711225697348,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1711225697348,
+      "end": 1711225697348,
+      "order": "normal"
+    }
+  ]
+}

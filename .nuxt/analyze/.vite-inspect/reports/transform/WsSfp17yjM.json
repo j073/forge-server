@@ -1,0 +1,217 @@
+{
+  "resolvedId": "C:/xampp/htdocs/jxj/nuxt-deno-rajamahjong/node_modules/react/index.js",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "'use strict';\n\nif (process.env.NODE_ENV === 'production') {\n  module.exports = require('./cjs/react.production.min.js');\n} else {\n  module.exports = require('./cjs/react.development.js');\n}\n",
+      "start": 1711225697393,
+      "end": 1711225697531,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1711225697531,
+      "end": 1711225697531,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1711225697531,
+      "end": 1711225697531,
+      "order": "pre"
+    },
+    {
+      "name": "transform-file",
+      "result": "'use strict';\n\nif (process.env.NODE_ENV === 'production') {\n  module.exports = require('./cjs/react.production.min.js');\n} else {\n  module.exports = require('./cjs/react.development.js');\n}\n",
+      "start": 1711225697531,
+      "end": 1711225697531,
+      "order": "pre",
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1711225697531,
+      "end": 1711225697531,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1711225697531,
+      "end": 1711225697531,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1711225697531,
+      "end": 1711225697531,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1711225697531,
+      "end": 1711225697531,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1711225697531,
+      "end": 1711225697531,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1711225697531,
+      "end": 1711225697531,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1711225697531,
+      "end": 1711225697531,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1711225697531,
+      "end": 1711225697531,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1711225697531,
+      "end": 1711225697531,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1711225697531,
+      "end": 1711225697531,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1711225697532,
+      "end": 1711225697532,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1711225697532,
+      "end": 1711225697532,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1711225697532,
+      "end": 1711225697532,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "result": "\"use strict\";\nif (true) {\n  module.exports = require(\"./cjs/react.production.min.js\");\n} else {\n  module.exports = require(\"./cjs/react.development.js\");\n}\n",
+      "start": 1711225697532,
+      "end": 1711225697628,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1711225697628,
+      "end": 1711225697628,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1711225697628,
+      "end": 1711225697628,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1711225697628,
+      "end": 1711225697628,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1711225697628,
+      "end": 1711225697628,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "result": "import * as commonjsHelpers from \"\u0000commonjsHelpers.js\";\nimport { __module as reactModule } from \"\\u0000C:/xampp/htdocs/jxj/nuxt-deno-rajamahjong/node_modules/react/index.js?commonjs-module\";\nvar react = reactModule.exports;\nimport require$$0 from \"\\u0000C:/xampp/htdocs/jxj/nuxt-deno-rajamahjong/node_modules/react/cjs/react.production.min.js?commonjs-proxy\";\n\n\"use strict\";\nif (true) {\n  reactModule.exports = require$$0;\n} else {\n  module.exports = require(\"./cjs/react.development.js\");\n}\n\nvar reactExports = reactModule.exports;\nexport default /*@__PURE__*/commonjsHelpers.getDefaultExportFromCjs(reactExports);\nexport { reactExports as __moduleExports };",
+      "start": 1711225697628,
+      "end": 1711225697766,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          ""
+        ],
+        "names": [],
+        "mappings": ";;;;;AAAA,YAAY,CAAC;AACb,IAAI,IAAI,EAAE;AACV,EAAE,mBAAc,GAAG,UAAwC,CAAC;AAC5D,CAAC;AACD;AACA"
+      }
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1711225697766,
+      "end": 1711225697766,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1711225697766,
+      "end": 1711225697766,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1711225697766,
+      "end": 1711225697766,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1711225697766,
+      "end": 1711225697766,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1711225697766,
+      "end": 1711225697766,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1711225697766,
+      "end": 1711225697766,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1711225697766,
+      "end": 1711225697766,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1711225697766,
+      "end": 1711225697766,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1711225697766,
+      "end": 1711225697766,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1711225697766,
+      "end": 1711225697766,
+      "order": "normal"
+    }
+  ]
+}

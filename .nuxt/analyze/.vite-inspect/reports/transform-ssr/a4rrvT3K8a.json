@@ -1,0 +1,258 @@
+{
+  "resolvedId": "C:/xampp/htdocs/jxj/nuxt-deno-rajamahjong/node_modules/nuxt-lazy-load/dist/runtime/plugin.mjs",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "import { defineNuxtPlugin } from '#app'\nimport { options } from '#build/nuxt-lazy-load-options'\n\nexport default defineNuxtPlugin(nuxtApp => {\n  let observer = null\n  const isPictureChild = el => el.parentNode && el.parentNode.tagName.toLowerCase() === 'picture'\n\n  const setAttribute = (el, attribute) => {\n    const dataAttribute = `data-${attribute}`\n\n    if (Array.isArray(el)) for (const item of el) setAttribute(item, attribute)\n    else if (el.getAttribute(dataAttribute)) {\n      el.setAttribute(attribute, el.getAttribute(dataAttribute))\n      el.removeAttribute(dataAttribute)\n      if (el.parentNode.load) el.parentNode.load()\n    } else if (el.tagName.toLowerCase() === 'picture') {\n      const img = el.querySelector('img')\n      if(img) {\n        setAttribute(img, 'src')\n        setAttribute(img, 'srcset')\n        img.addEventListener('load', () => setClass(el))\n      }\n    }\n  }\n\n  const setClass = el => {\n    el.classList.remove(options.loadingClass)\n    if (options.loadedClass) el.classList.add(options.loadedClass)\n  }\n\n  const setEvents = el => {\n    const tagName = el.tagName.toLowerCase()\n    let eventName = 'load'\n    if (['video', 'audio'].includes(tagName)) eventName = 'loadeddata'\n\n    el.addEventListener(eventName, () => {\n      if (isPictureChild(el)) {\n        if (el.parentNode.getAttribute('data-not-lazy') === null) setClass(el.parentNode)\n        else el.parentNode.removeAttribute('data-not-lazy')\n      } else setClass(el)\n    })\n  }\n\n  // Observer\n  if (process.client) {\n    observer = new IntersectionObserver((entries, self) => {\n      for (const { isIntersecting, target } of entries) {\n        if (isIntersecting) {\n          let el = target;\n          if (!isPictureChild(el) && options.loadingClass) el.classList.add(options.loadingClass)\n\n          const source = el.querySelectorAll('source')\n          setAttribute(el, 'poster')\n\n          if (source.length) el = [...source]\n          setAttribute(el, 'src')\n          setAttribute(el, 'srcset')\n          self.unobserve(target)\n        }\n      }\n    }, options.observerConfig)\n  }\n\n  // Directives\n  nuxtApp.vueApp.directive('lazy-load', {\n    beforeMount(el) {\n      setEvents(el)\n      if (!isPictureChild(el) && options.appendClass) el.classList.add(options.appendClass)\n    },\n\n    mounted(el) {\n      if (observer) observer.observe(el)\n      if (options.defaultImage && el.tagName.toLowerCase() === 'img') el.src = options.defaultImage\n    },\n\n    getSSRProps() {\n      return {}\n    }\n  })\n\n  nuxtApp.vueApp.directive('not-lazy', {\n    beforeMount(el) {\n      for (const item of [...el.querySelectorAll('source'), ...el.querySelectorAll('img')]) {\n        setAttribute(item, 'src')\n        setAttribute(item, 'srcset')\n      }\n\n      if (el.tagName.toLowerCase() !== 'picture') el.removeAttribute('data-not-lazy')\n    },\n\n    getSSRProps() {\n      return {}\n    }\n  })\n})\n",
+      "start": 1711225698638,
+      "end": 1711225699662,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1711225699662,
+      "end": 1711225699662,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1711225699662,
+      "end": 1711225699662,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1711225699662,
+      "end": 1711225699662,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1711225699662,
+      "end": 1711225699662,
+      "order": "pre"
+    },
+    {
+      "name": "transform-file",
+      "result": "import { defineNuxtPlugin } from '#app'\nimport { options } from '#build/nuxt-lazy-load-options'\n\nexport default defineNuxtPlugin(nuxtApp => {\n  let observer = null\n  const isPictureChild = el => el.parentNode && el.parentNode.tagName.toLowerCase() === 'picture'\n\n  const setAttribute = (el, attribute) => {\n    const dataAttribute = `data-${attribute}`\n\n    if (Array.isArray(el)) for (const item of el) setAttribute(item, attribute)\n    else if (el.getAttribute(dataAttribute)) {\n      el.setAttribute(attribute, el.getAttribute(dataAttribute))\n      el.removeAttribute(dataAttribute)\n      if (el.parentNode.load) el.parentNode.load()\n    } else if (el.tagName.toLowerCase() === 'picture') {\n      const img = el.querySelector('img')\n      if(img) {\n        setAttribute(img, 'src')\n        setAttribute(img, 'srcset')\n        img.addEventListener('load', () => setClass(el))\n      }\n    }\n  }\n\n  const setClass = el => {\n    el.classList.remove(options.loadingClass)\n    if (options.loadedClass) el.classList.add(options.loadedClass)\n  }\n\n  const setEvents = el => {\n    const tagName = el.tagName.toLowerCase()\n    let eventName = 'load'\n    if (['video', 'audio'].includes(tagName)) eventName = 'loadeddata'\n\n    el.addEventListener(eventName, () => {\n      if (isPictureChild(el)) {\n        if (el.parentNode.getAttribute('data-not-lazy') === null) setClass(el.parentNode)\n        else el.parentNode.removeAttribute('data-not-lazy')\n      } else setClass(el)\n    })\n  }\n\n  // Observer\n  if (process.client) {\n    observer = new IntersectionObserver((entries, self) => {\n      for (const { isIntersecting, target } of entries) {\n        if (isIntersecting) {\n          let el = target;\n          if (!isPictureChild(el) && options.loadingClass) el.classList.add(options.loadingClass)\n\n          const source = el.querySelectorAll('source')\n          setAttribute(el, 'poster')\n\n          if (source.length) el = [...source]\n          setAttribute(el, 'src')\n          setAttribute(el, 'srcset')\n          self.unobserve(target)\n        }\n      }\n    }, options.observerConfig)\n  }\n\n  // Directives\n  nuxtApp.vueApp.directive('lazy-load', {\n    beforeMount(el) {\n      setEvents(el)\n      if (!isPictureChild(el) && options.appendClass) el.classList.add(options.appendClass)\n    },\n\n    mounted(el) {\n      if (observer) observer.observe(el)\n      if (options.defaultImage && el.tagName.toLowerCase() === 'img') el.src = options.defaultImage\n    },\n\n    getSSRProps() {\n      return {}\n    }\n  })\n\n  nuxtApp.vueApp.directive('not-lazy', {\n    beforeMount(el) {\n      for (const item of [...el.querySelectorAll('source'), ...el.querySelectorAll('img')]) {\n        setAttribute(item, 'src')\n        setAttribute(item, 'srcset')\n      }\n\n      if (el.tagName.toLowerCase() !== 'picture') el.removeAttribute('data-not-lazy')\n    },\n\n    getSSRProps() {\n      return {}\n    }\n  })\n})\n",
+      "start": 1711225699662,
+      "end": 1711225699662,
+      "order": "pre",
+      "sourcemaps": null
+    },
+    {
+      "name": "transform-file",
+      "result": "import { defineNuxtPlugin } from '#app'\nimport { options } from '#build/nuxt-lazy-load-options'\n\nexport default defineNuxtPlugin(nuxtApp => {\n  let observer = null\n  const isPictureChild = el => el.parentNode && el.parentNode.tagName.toLowerCase() === 'picture'\n\n  const setAttribute = (el, attribute) => {\n    const dataAttribute = `data-${attribute}`\n\n    if (Array.isArray(el)) for (const item of el) setAttribute(item, attribute)\n    else if (el.getAttribute(dataAttribute)) {\n      el.setAttribute(attribute, el.getAttribute(dataAttribute))\n      el.removeAttribute(dataAttribute)\n      if (el.parentNode.load) el.parentNode.load()\n    } else if (el.tagName.toLowerCase() === 'picture') {\n      const img = el.querySelector('img')\n      if(img) {\n        setAttribute(img, 'src')\n        setAttribute(img, 'srcset')\n        img.addEventListener('load', () => setClass(el))\n      }\n    }\n  }\n\n  const setClass = el => {\n    el.classList.remove(options.loadingClass)\n    if (options.loadedClass) el.classList.add(options.loadedClass)\n  }\n\n  const setEvents = el => {\n    const tagName = el.tagName.toLowerCase()\n    let eventName = 'load'\n    if (['video', 'audio'].includes(tagName)) eventName = 'loadeddata'\n\n    el.addEventListener(eventName, () => {\n      if (isPictureChild(el)) {\n        if (el.parentNode.getAttribute('data-not-lazy') === null) setClass(el.parentNode)\n        else el.parentNode.removeAttribute('data-not-lazy')\n      } else setClass(el)\n    })\n  }\n\n  // Observer\n  if (process.client) {\n    observer = new IntersectionObserver((entries, self) => {\n      for (const { isIntersecting, target } of entries) {\n        if (isIntersecting) {\n          let el = target;\n          if (!isPictureChild(el) && options.loadingClass) el.classList.add(options.loadingClass)\n\n          const source = el.querySelectorAll('source')\n          setAttribute(el, 'poster')\n\n          if (source.length) el = [...source]\n          setAttribute(el, 'src')\n          setAttribute(el, 'srcset')\n          self.unobserve(target)\n        }\n      }\n    }, options.observerConfig)\n  }\n\n  // Directives\n  nuxtApp.vueApp.directive('lazy-load', {\n    beforeMount(el) {\n      setEvents(el)\n      if (!isPictureChild(el) && options.appendClass) el.classList.add(options.appendClass)\n    },\n\n    mounted(el) {\n      if (observer) observer.observe(el)\n      if (options.defaultImage && el.tagName.toLowerCase() === 'img') el.src = options.defaultImage\n    },\n\n    getSSRProps() {\n      return {}\n    }\n  })\n\n  nuxtApp.vueApp.directive('not-lazy', {\n    beforeMount(el) {\n      for (const item of [...el.querySelectorAll('source'), ...el.querySelectorAll('img')]) {\n        setAttribute(item, 'src')\n        setAttribute(item, 'srcset')\n      }\n\n      if (el.tagName.toLowerCase() !== 'picture') el.removeAttribute('data-not-lazy')\n    },\n\n    getSSRProps() {\n      return {}\n    }\n  })\n})\n",
+      "start": 1711225699662,
+      "end": 1711225699662,
+      "order": "pre",
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1711225699662,
+      "end": 1711225699662,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1711225699662,
+      "end": 1711225699662,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1711225699662,
+      "end": 1711225699662,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1711225699662,
+      "end": 1711225699662,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1711225699662,
+      "end": 1711225699662,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1711225699662,
+      "end": 1711225699662,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1711225699662,
+      "end": 1711225699662,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1711225699662,
+      "end": 1711225699662,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1711225699662,
+      "end": 1711225699662,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1711225699662,
+      "end": 1711225699662,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1711225699662,
+      "end": 1711225699663,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1711225699662,
+      "end": 1711225699663,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1711225699663,
+      "end": 1711225699663,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1711225699663,
+      "end": 1711225699663,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1711225699663,
+      "end": 1711225699664,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "result": "import { defineNuxtPlugin } from \"#app\";\nimport { options } from \"#build/nuxt-lazy-load-options\";\nexport default defineNuxtPlugin((nuxtApp) => {\n  let observer = null;\n  const isPictureChild = (el) => el.parentNode && el.parentNode.tagName.toLowerCase() === \"picture\";\n  const setAttribute = (el, attribute) => {\n    const dataAttribute = `data-${attribute}`;\n    if (Array.isArray(el))\n      for (const item of el)\n        setAttribute(item, attribute);\n    else if (el.getAttribute(dataAttribute)) {\n      el.setAttribute(attribute, el.getAttribute(dataAttribute));\n      el.removeAttribute(dataAttribute);\n      if (el.parentNode.load)\n        el.parentNode.load();\n    } else if (el.tagName.toLowerCase() === \"picture\") {\n      const img = el.querySelector(\"img\");\n      if (img) {\n        setAttribute(img, \"src\");\n        setAttribute(img, \"srcset\");\n        img.addEventListener(\"load\", () => setClass(el));\n      }\n    }\n  };\n  const setClass = (el) => {\n    el.classList.remove(options.loadingClass);\n    if (options.loadedClass)\n      el.classList.add(options.loadedClass);\n  };\n  const setEvents = (el) => {\n    const tagName = el.tagName.toLowerCase();\n    let eventName = \"load\";\n    if ([\"video\", \"audio\"].includes(tagName))\n      eventName = \"loadeddata\";\n    el.addEventListener(eventName, () => {\n      if (isPictureChild(el)) {\n        if (el.parentNode.getAttribute(\"data-not-lazy\") === null)\n          setClass(el.parentNode);\n        else\n          el.parentNode.removeAttribute(\"data-not-lazy\");\n      } else\n        setClass(el);\n    });\n  };\n  if (false) {\n    observer = new IntersectionObserver((entries, self) => {\n      for (const { isIntersecting, target } of entries) {\n        if (isIntersecting) {\n          let el = target;\n          if (!isPictureChild(el) && options.loadingClass)\n            el.classList.add(options.loadingClass);\n          const source = el.querySelectorAll(\"source\");\n          setAttribute(el, \"poster\");\n          if (source.length)\n            el = [...source];\n          setAttribute(el, \"src\");\n          setAttribute(el, \"srcset\");\n          self.unobserve(target);\n        }\n      }\n    }, options.observerConfig);\n  }\n  nuxtApp.vueApp.directive(\"lazy-load\", {\n    beforeMount(el) {\n      setEvents(el);\n      if (!isPictureChild(el) && options.appendClass)\n        el.classList.add(options.appendClass);\n    },\n    mounted(el) {\n      if (observer)\n        observer.observe(el);\n      if (options.defaultImage && el.tagName.toLowerCase() === \"img\")\n        el.src = options.defaultImage;\n    },\n    getSSRProps() {\n      return {};\n    }\n  });\n  nuxtApp.vueApp.directive(\"not-lazy\", {\n    beforeMount(el) {\n      for (const item of [...el.querySelectorAll(\"source\"), ...el.querySelectorAll(\"img\")]) {\n        setAttribute(item, \"src\");\n        setAttribute(item, \"srcset\");\n      }\n      if (el.tagName.toLowerCase() !== \"picture\")\n        el.removeAttribute(\"data-not-lazy\");\n    },\n    getSSRProps() {\n      return {};\n    }\n  });\n});\n",
+      "start": 1711225699664,
+      "end": 1711225699757,
+      "order": "normal",
+      "sourcemaps": "{\n  \"version\": 3,\n  \"sources\": [\"C:/xampp/htdocs/jxj/nuxt-deno-rajamahjong/node_modules/nuxt-lazy-load/dist/runtime/plugin.mjs\"],\n  \"sourcesContent\": [\"import { defineNuxtPlugin } from '#app'\\nimport { options } from '#build/nuxt-lazy-load-options'\\n\\nexport default defineNuxtPlugin(nuxtApp => {\\n  let observer = null\\n  const isPictureChild = el => el.parentNode && el.parentNode.tagName.toLowerCase() === 'picture'\\n\\n  const setAttribute = (el, attribute) => {\\n    const dataAttribute = `data-${attribute}`\\n\\n    if (Array.isArray(el)) for (const item of el) setAttribute(item, attribute)\\n    else if (el.getAttribute(dataAttribute)) {\\n      el.setAttribute(attribute, el.getAttribute(dataAttribute))\\n      el.removeAttribute(dataAttribute)\\n      if (el.parentNode.load) el.parentNode.load()\\n    } else if (el.tagName.toLowerCase() === 'picture') {\\n      const img = el.querySelector('img')\\n      if(img) {\\n        setAttribute(img, 'src')\\n        setAttribute(img, 'srcset')\\n        img.addEventListener('load', () => setClass(el))\\n      }\\n    }\\n  }\\n\\n  const setClass = el => {\\n    el.classList.remove(options.loadingClass)\\n    if (options.loadedClass) el.classList.add(options.loadedClass)\\n  }\\n\\n  const setEvents = el => {\\n    const tagName = el.tagName.toLowerCase()\\n    let eventName = 'load'\\n    if (['video', 'audio'].includes(tagName)) eventName = 'loadeddata'\\n\\n    el.addEventListener(eventName, () => {\\n      if (isPictureChild(el)) {\\n        if (el.parentNode.getAttribute('data-not-lazy') === null) setClass(el.parentNode)\\n        else el.parentNode.removeAttribute('data-not-lazy')\\n      } else setClass(el)\\n    })\\n  }\\n\\n  // Observer\\n  if (process.client) {\\n    observer = new IntersectionObserver((entries, self) => {\\n      for (const { isIntersecting, target } of entries) {\\n        if (isIntersecting) {\\n          let el = target;\\n          if (!isPictureChild(el) && options.loadingClass) el.classList.add(options.loadingClass)\\n\\n          const source = el.querySelectorAll('source')\\n          setAttribute(el, 'poster')\\n\\n          if (source.length) el = [...source]\\n          setAttribute(el, 'src')\\n          setAttribute(el, 'srcset')\\n          self.unobserve(target)\\n        }\\n      }\\n    }, options.observerConfig)\\n  }\\n\\n  // Directives\\n  nuxtApp.vueApp.directive('lazy-load', {\\n    beforeMount(el) {\\n      setEvents(el)\\n      if (!isPictureChild(el) && options.appendClass) el.classList.add(options.appendClass)\\n    },\\n\\n    mounted(el) {\\n      if (observer) observer.observe(el)\\n      if (options.defaultImage && el.tagName.toLowerCase() === 'img') el.src = options.defaultImage\\n    },\\n\\n    getSSRProps() {\\n      return {}\\n    }\\n  })\\n\\n  nuxtApp.vueApp.directive('not-lazy', {\\n    beforeMount(el) {\\n      for (const item of [...el.querySelectorAll('source'), ...el.querySelectorAll('img')]) {\\n        setAttribute(item, 'src')\\n        setAttribute(item, 'srcset')\\n      }\\n\\n      if (el.tagName.toLowerCase() !== 'picture') el.removeAttribute('data-not-lazy')\\n    },\\n\\n    getSSRProps() {\\n      return {}\\n    }\\n  })\\n})\\n\"],\n  \"mappings\": \"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\",\n  \"names\": []\n}\n"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1711225699757,
+      "end": 1711225699757,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1711225699757,
+      "end": 1711225699757,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1711225699757,
+      "end": 1711225699757,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1711225699757,
+      "end": 1711225699757,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1711225699758,
+      "end": 1711225699759,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1711225699759,
+      "end": 1711225699759,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1711225699759,
+      "end": 1711225699759,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1711225699759,
+      "end": 1711225699759,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1711225699759,
+      "end": 1711225699759,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1711225699759,
+      "end": 1711225699759,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1711225699759,
+      "end": 1711225699759,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1711225699761,
+      "end": 1711225699763,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1711225699761,
+      "end": 1711225699763,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1711225699763,
+      "end": 1711225699763,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1711225699763,
+      "end": 1711225699764,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1711225699764,
+      "end": 1711225699764,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1711225699764,
+      "end": 1711225699764,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1711225699764,
+      "end": 1711225699764,
+      "order": "normal"
+    }
+  ]
+}

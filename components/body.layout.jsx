@@ -7,17 +7,18 @@ export default function BodyLayout() {
   return (
     <>
       <div id="sectmobile" class="fugu--hero-section">
-        <div class="container">
-          <div class=" container slick containerwd slick-initialized slick-slider" id="titleupdated">
-              <div class="slick-list draggable container">
-                <div class="marquee">
-                  <Checkup />
-                </div>
-              </div>
-          </div>
-        </div>
         <BannerSlide/>
         <div class="container">
+        <div class=" container slick containerwd slick-initialized slick-slider" id="titleupdated">
+            <div class="slick-list draggable container">
+            <div class="marquee">
+            <Checkup />
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          
           <div class="fugu--hero-shape1">
             <svg
               style={{
@@ -48,7 +49,7 @@ export default function BodyLayout() {
           <div class="fugu--hero-shape2"></div>
         </div>
       </div>
-      <div class="section" style="background-color: #00002a">
+      <div class="section" style="background-color: #25013b">
         <Menu/>
      </div>
     </>
