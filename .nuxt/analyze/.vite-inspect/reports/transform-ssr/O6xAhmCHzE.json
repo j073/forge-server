@@ -1,0 +1,284 @@
+{
+  "resolvedId": "C:/xampp/htdocs/jxj/nuxt-deno-rajazeus/components/body.layout.jsx",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "import BannerSlide from \"./BannerSlide.vue\";\r\nimport Checkup from \"./Checkup.vue\";\r\nimport Menu from \"./Menu.vue\";\r\n\r\nexport default function BodyLayout() {\r\n\r\n  return (\r\n    <>\r\n      <div id=\"sectmobile\" class=\"fugu--hero-section\">\r\n        <div class=\"container\">\r\n          <div class=\" container slick containerwd slick-initialized slick-slider\" id=\"titleupdated\">\r\n              <div class=\"slick-list draggable container\">\r\n                <div class=\"marquee\">\r\n                  <Checkup />\r\n                </div>\r\n              </div>\r\n          </div>\r\n        </div>\r\n        <BannerSlide/>\r\n        <div class=\"container\">\r\n          <div class=\"fugu--hero-shape1\">\r\n            <svg\r\n              style={{\r\n                border: 0,\r\n                clip: \"rect(0 0 0 0)\",\r\n                height: 0,\r\n                margin: \"-1px\",\r\n                overflow: \"hidden\",\r\n                padding: 0,\r\n                position: \"absolute\",\r\n                width: \"1px\",\r\n              }}\r\n            >\r\n              <filter id=\"sharpBlur\">\r\n                <feGaussianBlur\r\n                  stdDeviation=\"20\"\r\n                  colorInterpolationFilters=\"sRGB\"\r\n                ></feGaussianBlur>\r\n                <feColorMatrix\r\n                  type=\"matrix\"\r\n                  colorInterpolationFilters=\"sRGB\"\r\n                  values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 9 0\"\r\n                ></feColorMatrix>\r\n                <feComposite in2=\"SourceGraphic\" operator=\"in\"></feComposite>\r\n              </filter>\r\n            </svg>\r\n          </div>\r\n          <div class=\"fugu--hero-shape2\"></div>\r\n        </div>\r\n      </div>\r\n      <div class=\"section\" style=\"background-color: #00002a\">\r\n        <Menu/>\r\n     </div>\r\n    </>\r\n  );\r\n}",
+      "start": 1711159857924,
+      "end": 1711159857963,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1711159857963,
+      "end": 1711159857963,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1711159857963,
+      "end": 1711159857963,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1711159857963,
+      "end": 1711159857963,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1711159857963,
+      "end": 1711159857963,
+      "order": "pre"
+    },
+    {
+      "name": "transform-file",
+      "result": "import BannerSlide from \"./BannerSlide.vue\";\r\nimport Checkup from \"./Checkup.vue\";\r\nimport Menu from \"./Menu.vue\";\r\n\r\nexport default function BodyLayout() {\r\n\r\n  return (\r\n    <>\r\n      <div id=\"sectmobile\" class=\"fugu--hero-section\">\r\n        <div class=\"container\">\r\n          <div class=\" container slick containerwd slick-initialized slick-slider\" id=\"titleupdated\">\r\n              <div class=\"slick-list draggable container\">\r\n                <div class=\"marquee\">\r\n                  <Checkup />\r\n                </div>\r\n              </div>\r\n          </div>\r\n        </div>\r\n        <BannerSlide/>\r\n        <div class=\"container\">\r\n          <div class=\"fugu--hero-shape1\">\r\n            <svg\r\n              style={{\r\n                border: 0,\r\n                clip: \"rect(0 0 0 0)\",\r\n                height: 0,\r\n                margin: \"-1px\",\r\n                overflow: \"hidden\",\r\n                padding: 0,\r\n                position: \"absolute\",\r\n                width: \"1px\",\r\n              }}\r\n            >\r\n              <filter id=\"sharpBlur\">\r\n                <feGaussianBlur\r\n                  stdDeviation=\"20\"\r\n                  colorInterpolationFilters=\"sRGB\"\r\n                ></feGaussianBlur>\r\n                <feColorMatrix\r\n                  type=\"matrix\"\r\n                  colorInterpolationFilters=\"sRGB\"\r\n                  values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 9 0\"\r\n                ></feColorMatrix>\r\n                <feComposite in2=\"SourceGraphic\" operator=\"in\"></feComposite>\r\n              </filter>\r\n            </svg>\r\n          </div>\r\n          <div class=\"fugu--hero-shape2\"></div>\r\n        </div>\r\n      </div>\r\n      <div class=\"section\" style=\"background-color: #00002a\">\r\n        <Menu/>\r\n     </div>\r\n    </>\r\n  );\r\n}",
+      "start": 1711159857963,
+      "end": 1711159857963,
+      "order": "pre",
+      "sourcemaps": null
+    },
+    {
+      "name": "transform-file",
+      "result": "import BannerSlide from \"./BannerSlide.vue\";\r\nimport Checkup from \"./Checkup.vue\";\r\nimport Menu from \"./Menu.vue\";\r\n\r\nexport default function BodyLayout() {\r\n\r\n  return (\r\n    <>\r\n      <div id=\"sectmobile\" class=\"fugu--hero-section\">\r\n        <div class=\"container\">\r\n          <div class=\" container slick containerwd slick-initialized slick-slider\" id=\"titleupdated\">\r\n              <div class=\"slick-list draggable container\">\r\n                <div class=\"marquee\">\r\n                  <Checkup />\r\n                </div>\r\n              </div>\r\n          </div>\r\n        </div>\r\n        <BannerSlide/>\r\n        <div class=\"container\">\r\n          <div class=\"fugu--hero-shape1\">\r\n            <svg\r\n              style={{\r\n                border: 0,\r\n                clip: \"rect(0 0 0 0)\",\r\n                height: 0,\r\n                margin: \"-1px\",\r\n                overflow: \"hidden\",\r\n                padding: 0,\r\n                position: \"absolute\",\r\n                width: \"1px\",\r\n              }}\r\n            >\r\n              <filter id=\"sharpBlur\">\r\n                <feGaussianBlur\r\n                  stdDeviation=\"20\"\r\n                  colorInterpolationFilters=\"sRGB\"\r\n                ></feGaussianBlur>\r\n                <feColorMatrix\r\n                  type=\"matrix\"\r\n                  colorInterpolationFilters=\"sRGB\"\r\n                  values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 9 0\"\r\n                ></feColorMatrix>\r\n                <feComposite in2=\"SourceGraphic\" operator=\"in\"></feComposite>\r\n              </filter>\r\n            </svg>\r\n          </div>\r\n          <div class=\"fugu--hero-shape2\"></div>\r\n        </div>\r\n      </div>\r\n      <div class=\"section\" style=\"background-color: #00002a\">\r\n        <Menu/>\r\n     </div>\r\n    </>\r\n  );\r\n}",
+      "start": 1711159857963,
+      "end": 1711159857963,
+      "order": "pre",
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1711159857963,
+      "end": 1711159857963,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1711159857963,
+      "end": 1711159857963,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1711159857963,
+      "end": 1711159857963,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1711159857963,
+      "end": 1711159857963,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1711159857963,
+      "end": 1711159857963,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1711159857963,
+      "end": 1711159857963,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1711159857963,
+      "end": 1711159857963,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "result": "import { createVNode as _createVNode, Fragment as _Fragment } from \"vue\";\nimport BannerSlide from \"./BannerSlide.vue\";\nimport Checkup from \"./Checkup.vue\";\nimport Menu from \"./Menu.vue\";\nexport default function BodyLayout() {\n  return _createVNode(_Fragment, null, [_createVNode(\"div\", {\n    \"id\": \"sectmobile\",\n    \"class\": \"fugu--hero-section\"\n  }, [_createVNode(\"div\", {\n    \"class\": \"container\"\n  }, [_createVNode(\"div\", {\n    \"class\": \" container slick containerwd slick-initialized slick-slider\",\n    \"id\": \"titleupdated\"\n  }, [_createVNode(\"div\", {\n    \"class\": \"slick-list draggable container\"\n  }, [_createVNode(\"div\", {\n    \"class\": \"marquee\"\n  }, [_createVNode(Checkup, null, null)])])])]), _createVNode(BannerSlide, null, null), _createVNode(\"div\", {\n    \"class\": \"container\"\n  }, [_createVNode(\"div\", {\n    \"class\": \"fugu--hero-shape1\"\n  }, [_createVNode(\"svg\", {\n    \"style\": {\n      border: 0,\n      clip: \"rect(0 0 0 0)\",\n      height: 0,\n      margin: \"-1px\",\n      overflow: \"hidden\",\n      padding: 0,\n      position: \"absolute\",\n      width: \"1px\"\n    }\n  }, [_createVNode(\"filter\", {\n    \"id\": \"sharpBlur\"\n  }, [_createVNode(\"feGaussianBlur\", {\n    \"stdDeviation\": \"20\",\n    \"colorInterpolationFilters\": \"sRGB\"\n  }, null), _createVNode(\"feColorMatrix\", {\n    \"type\": \"matrix\",\n    \"colorInterpolationFilters\": \"sRGB\",\n    \"values\": \"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 9 0\"\n  }, null), _createVNode(\"feComposite\", {\n    \"in2\": \"SourceGraphic\",\n    \"operator\": \"in\"\n  }, null)])])]), _createVNode(\"div\", {\n    \"class\": \"fugu--hero-shape2\"\n  }, null)])]), _createVNode(\"div\", {\n    \"class\": \"section\",\n    \"style\": \"background-color: #00002a\"\n  }, [_createVNode(Menu, null, null)])]);\n}",
+      "start": 1711159857963,
+      "end": 1711159857969,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "names": [
+          "BannerSlide",
+          "Checkup",
+          "Menu",
+          "BodyLayout",
+          "_createVNode",
+          "_Fragment",
+          "border",
+          "clip",
+          "height",
+          "margin",
+          "overflow",
+          "padding",
+          "position",
+          "width"
+        ],
+        "sources": [
+          "C:/xampp/htdocs/jxj/nuxt-deno-rajazeus/components/body.layout.jsx"
+        ],
+        "sourcesContent": [
+          "import BannerSlide from \"./BannerSlide.vue\";\r\nimport Checkup from \"./Checkup.vue\";\r\nimport Menu from \"./Menu.vue\";\r\n\r\nexport default function BodyLayout() {\r\n\r\n  return (\r\n    <>\r\n      <div id=\"sectmobile\" class=\"fugu--hero-section\">\r\n        <div class=\"container\">\r\n          <div class=\" container slick containerwd slick-initialized slick-slider\" id=\"titleupdated\">\r\n              <div class=\"slick-list draggable container\">\r\n                <div class=\"marquee\">\r\n                  <Checkup />\r\n                </div>\r\n              </div>\r\n          </div>\r\n        </div>\r\n        <BannerSlide/>\r\n        <div class=\"container\">\r\n          <div class=\"fugu--hero-shape1\">\r\n            <svg\r\n              style={{\r\n                border: 0,\r\n                clip: \"rect(0 0 0 0)\",\r\n                height: 0,\r\n                margin: \"-1px\",\r\n                overflow: \"hidden\",\r\n                padding: 0,\r\n                position: \"absolute\",\r\n                width: \"1px\",\r\n              }}\r\n            >\r\n              <filter id=\"sharpBlur\">\r\n                <feGaussianBlur\r\n                  stdDeviation=\"20\"\r\n                  colorInterpolationFilters=\"sRGB\"\r\n                ></feGaussianBlur>\r\n                <feColorMatrix\r\n                  type=\"matrix\"\r\n                  colorInterpolationFilters=\"sRGB\"\r\n                  values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 9 0\"\r\n                ></feColorMatrix>\r\n                <feComposite in2=\"SourceGraphic\" operator=\"in\"></feComposite>\r\n              </filter>\r\n            </svg>\r\n          </div>\r\n          <div class=\"fugu--hero-shape2\"></div>\r\n        </div>\r\n      </div>\r\n      <div class=\"section\" style=\"background-color: #00002a\">\r\n        <Menu/>\r\n     </div>\r\n    </>\r\n  );\r\n}"
+        ],
+        "mappings": ";AAAA,OAAOA,WAAW,MAAM,mBAAmB;AAC3C,OAAOC,OAAO,MAAM,eAAe;AACnC,OAAOC,IAAI,MAAM,YAAY;AAE7B,eAAe,SAASC,UAAUA,CAAA,EAAG;EAEnC,OAAAC,YAAA,CAAAC,SAAA,SAAAD,YAAA;IAAA;IAAA;EAAA,IAAAA,YAAA;IAAA;EAAA,IAAAA,YAAA;IAAA;IAAA;EAAA,IAAAA,YAAA;IAAA;EAAA,IAAAA,YAAA;IAAA;EAAA,IAAAA,YAAA,CAAAH,OAAA,uBAAAG,YAAA,CAAAJ,WAAA,eAAAI,YAAA;IAAA;EAAA,IAAAA,YAAA;IAAA;EAAA,IAAAA,YAAA;IAAA,SAgBmB;MACLE,MAAM,EAAE,CAAC;MACTC,IAAI,EAAE,eAAe;MACrBC,MAAM,EAAE,CAAC;MACTC,MAAM,EAAE,MAAM;MACdC,QAAQ,EAAE,QAAQ;MAClBC,OAAO,EAAE,CAAC;MACVC,QAAQ,EAAE,UAAU;MACpBC,KAAK,EAAE;IACT;EAAC,IAAAT,YAAA;IAAA;EAAA,IAAAA,YAAA;IAAA;IAAA;EAAA,UAAAA,YAAA;IAAA;IAAA;IAAA;EAAA,UAAAA,YAAA;IAAA;IAAA;EAAA,gBAAAA,YAAA;IAAA;EAAA,cAAAA,YAAA;IAAA;IAAA;EAAA,IAAAA,YAAA,CAAAF,IAAA;AAwBf",
+        "ignoreList": []
+      }
+    },
+    {
+      "name": "replace",
+      "start": 1711159857969,
+      "end": 1711159857969,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1711159857969,
+      "end": 1711159857969,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1711159857969,
+      "end": 1711159857969,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1711159857969,
+      "end": 1711159857969,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1711159857969,
+      "end": 1711159857969,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1711159857969,
+      "end": 1711159857969,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1711159857969,
+      "end": 1711159857969,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1711159857969,
+      "end": 1711159857969,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1711159857969,
+      "end": 1711159857969,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1711159857969,
+      "end": 1711159857969,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1711159857969,
+      "end": 1711159857969,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1711159857969,
+      "end": 1711159857969,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1711159857969,
+      "end": 1711159857969,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1711159857969,
+      "end": 1711159857969,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1711159857969,
+      "end": 1711159857969,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1711159857969,
+      "end": 1711159857969,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1711159857969,
+      "end": 1711159857969,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1711159857969,
+      "end": 1711159857970,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1711159857969,
+      "end": 1711159857970,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1711159857970,
+      "end": 1711159857970,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1711159857970,
+      "end": 1711159857970,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1711159857970,
+      "end": 1711159857970,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1711159857970,
+      "end": 1711159857970,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1711159857970,
+      "end": 1711159857970,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1711159857970,
+      "end": 1711159857970,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1711159857970,
+      "end": 1711159857970,
+      "order": "normal"
+    }
+  ]
+}

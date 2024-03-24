@@ -1,0 +1,277 @@
+{
+  "resolvedId": "C:/xampp/htdocs/jxj/nuxt-deno-rajazeus/components/header.layout.jsx",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "function HeaderLayout () {\r\n    return (\r\n        <>\r\n        <header className=\"site-header site-header--menu-right fugu--header-section fugu--header-three \" id=\"sticky-menu\">\r\n            <div className=\"container-fluid\">\r\n                <center>\r\n                    <a href=\"/\" aria-label=\"Great RAJAZEUS\">\r\n                            <img alt=\"\" srcSet=\"https://it-cgg.b-cdn.net/rtp/rajazeus/logorz.webp\"\r\n                            src=\"https://it-cgg.b-cdn.net/rtp/rajazeus/logorz.webp\" width=\"350\" height=\"65\"\r\n                            decoding=\"async\" data-nimg=\"1\" className=\"light-version-logo\" loading=\"lazy\"/>\r\n                    </a>\r\n                </center>\r\n            </div>\r\n        </header>\r\n        </>  \r\n    );\r\n};\r\n\r\nexport default HeaderLayout;",
+      "start": 1711159857924,
+      "end": 1711159857945,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1711159857945,
+      "end": 1711159857945,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1711159857945,
+      "end": 1711159857945,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1711159857945,
+      "end": 1711159857945,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1711159857945,
+      "end": 1711159857945,
+      "order": "pre"
+    },
+    {
+      "name": "transform-file",
+      "result": "function HeaderLayout () {\r\n    return (\r\n        <>\r\n        <header className=\"site-header site-header--menu-right fugu--header-section fugu--header-three \" id=\"sticky-menu\">\r\n            <div className=\"container-fluid\">\r\n                <center>\r\n                    <a href=\"/\" aria-label=\"Great RAJAZEUS\">\r\n                            <img v-lazy-load  alt=\"\" srcSet=\"https://it-cgg.b-cdn.net/rtp/rajazeus/logorz.webp\"\r\n                            data-src=\"https://it-cgg.b-cdn.net/rtp/rajazeus/logorz.webp\" width=\"350\" height=\"65\"\r\n                            decoding=\"async\" data-nimg=\"1\" className=\"light-version-logo\" loading=\"lazy\"/>\r\n                    </a>\r\n                </center>\r\n            </div>\r\n        </header>\r\n        </>  \r\n    );\r\n};\r\n\r\nexport default HeaderLayout;",
+      "start": 1711159857945,
+      "end": 1711159857946,
+      "order": "pre",
+      "sourcemaps": null
+    },
+    {
+      "name": "transform-file",
+      "result": "function HeaderLayout () {\r\n    return (\r\n        <>\r\n        <header className=\"site-header site-header--menu-right fugu--header-section fugu--header-three \" id=\"sticky-menu\">\r\n            <div className=\"container-fluid\">\r\n                <center>\r\n                    <a href=\"/\" aria-label=\"Great RAJAZEUS\">\r\n                            <img v-lazy-load  alt=\"\" srcSet=\"https://it-cgg.b-cdn.net/rtp/rajazeus/logorz.webp\"\r\n                            data-src=\"https://it-cgg.b-cdn.net/rtp/rajazeus/logorz.webp\" width=\"350\" height=\"65\"\r\n                            decoding=\"async\" data-nimg=\"1\" className=\"light-version-logo\" loading=\"lazy\"/>\r\n                    </a>\r\n                </center>\r\n            </div>\r\n        </header>\r\n        </>  \r\n    );\r\n};\r\n\r\nexport default HeaderLayout;",
+      "start": 1711159857945,
+      "end": 1711159857946,
+      "order": "pre",
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1711159857946,
+      "end": 1711159857946,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1711159857946,
+      "end": 1711159857946,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1711159857946,
+      "end": 1711159857946,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1711159857946,
+      "end": 1711159857946,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1711159857946,
+      "end": 1711159857946,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1711159857946,
+      "end": 1711159857946,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1711159857946,
+      "end": 1711159857946,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "result": "import { resolveComponent as _resolveComponent, withDirectives as _withDirectives, createVNode as _createVNode, resolveDirective as _resolveDirective, Fragment as _Fragment } from \"vue\";\nfunction HeaderLayout() {\n  return _createVNode(_Fragment, null, [_createVNode(\"header\", {\n    \"className\": \"site-header site-header--menu-right fugu--header-section fugu--header-three \",\n    \"id\": \"sticky-menu\"\n  }, [_createVNode(\"div\", {\n    \"className\": \"container-fluid\"\n  }, [_createVNode(_resolveComponent(\"center\"), null, {\n    default: () => [_createVNode(\"a\", {\n      \"href\": \"/\",\n      \"aria-label\": \"Great RAJAZEUS\"\n    }, [_withDirectives(_createVNode(\"img\", {\n      \"alt\": \"\",\n      \"srcSet\": \"https://it-cgg.b-cdn.net/rtp/rajazeus/logorz.webp\",\n      \"data-src\": \"https://it-cgg.b-cdn.net/rtp/rajazeus/logorz.webp\",\n      \"width\": \"350\",\n      \"height\": \"65\",\n      \"decoding\": \"async\",\n      \"data-nimg\": \"1\",\n      \"className\": \"light-version-logo\",\n      \"loading\": \"lazy\"\n    }, null), [[_resolveDirective(\"lazy-load\")]])])]\n  })])])]);\n}\n;\nexport default HeaderLayout;",
+      "start": 1711159857946,
+      "end": 1711159857953,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "names": [
+          "HeaderLayout",
+          "_createVNode",
+          "_Fragment",
+          "_resolveComponent",
+          "default",
+          "_withDirectives",
+          "_resolveDirective"
+        ],
+        "sources": [
+          "C:/xampp/htdocs/jxj/nuxt-deno-rajazeus/components/header.layout.jsx"
+        ],
+        "sourcesContent": [
+          "function HeaderLayout () {\r\n    return (\r\n        <>\r\n        <header className=\"site-header site-header--menu-right fugu--header-section fugu--header-three \" id=\"sticky-menu\">\r\n            <div className=\"container-fluid\">\r\n                <center>\r\n                    <a href=\"/\" aria-label=\"Great RAJAZEUS\">\r\n                            <img v-lazy-load  alt=\"\" srcSet=\"https://it-cgg.b-cdn.net/rtp/rajazeus/logorz.webp\"\r\n                            data-src=\"https://it-cgg.b-cdn.net/rtp/rajazeus/logorz.webp\" width=\"350\" height=\"65\"\r\n                            decoding=\"async\" data-nimg=\"1\" className=\"light-version-logo\" loading=\"lazy\"/>\r\n                    </a>\r\n                </center>\r\n            </div>\r\n        </header>\r\n        </>  \r\n    );\r\n};\r\n\r\nexport default HeaderLayout;"
+        ],
+        "mappings": ";AAAA,SAASA,YAAYA,CAAA,EAAI;EACrB,OAAAC,YAAA,CAAAC,SAAA,SAAAD,YAAA;IAAA;IAAA;EAAA,IAAAA,YAAA;IAAA;EAAA,IAAAA,YAAA,CAAAE,iBAAA;IAAAC,OAAA,EAAAA,CAAA,MAAAH,YAAA;MAAA;MAAA;IAAA,IAAAI,eAAA,CAAAJ,YAAA;MAAA;MAAA;MAAA;MAAA;MAAA;MAAA;MAAA;MAAA;MAAA;IAAA,YAAAK,iBAAA;EAAA;AAeJ;AAAC;AAED,eAAeN,YAAY",
+        "ignoreList": []
+      }
+    },
+    {
+      "name": "replace",
+      "start": 1711159857953,
+      "end": 1711159857953,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1711159857953,
+      "end": 1711159857953,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1711159857953,
+      "end": 1711159857953,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1711159857953,
+      "end": 1711159857953,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1711159857953,
+      "end": 1711159857953,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1711159857953,
+      "end": 1711159857953,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1711159857953,
+      "end": 1711159857953,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1711159857953,
+      "end": 1711159857953,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1711159857953,
+      "end": 1711159857953,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1711159857953,
+      "end": 1711159857953,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1711159857953,
+      "end": 1711159857953,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1711159857953,
+      "end": 1711159857953,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1711159857953,
+      "end": 1711159857953,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1711159857953,
+      "end": 1711159857953,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1711159857953,
+      "end": 1711159857953,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1711159857953,
+      "end": 1711159857953,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1711159857953,
+      "end": 1711159857953,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1711159857953,
+      "end": 1711159857954,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1711159857953,
+      "end": 1711159857954,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1711159857954,
+      "end": 1711159857954,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1711159857954,
+      "end": 1711159857954,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1711159857954,
+      "end": 1711159857954,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1711159857954,
+      "end": 1711159857954,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1711159857954,
+      "end": 1711159857954,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1711159857954,
+      "end": 1711159857954,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1711159857954,
+      "end": 1711159857954,
+      "order": "normal"
+    }
+  ]
+}
