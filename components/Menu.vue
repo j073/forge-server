@@ -1,58 +1,115 @@
 <template>
-    <div class="container fugu-gallery-menu" style="text-align: center;">
-        <ul>
-        <li
-          @click="handleItemClick('Pragmatic Play')"
-          :class="{
-            active: activeItem === 'Pragmatic Play',
-            j0x73fx: activeItem === 'Pragmatic Play',
-          }"
-        >
-        <nuxt-img loading="lazy" effect="blur" src="https://it-cgg.b-cdn.net/rtp/rmj/provider/pragmaticplay.webp" style="width: 100px;"/>
-        <br/>PRAGMATIC PLAY
-        </li>
-        <li
-          @click="handleItemClick('PG Soft')"
-          :class="{
-            active: activeItem === 'PG Soft',
-            j0x73fx: activeItem === 'PG Soft',
-          }"
-        >
-        <nuxt-img loading="lazy" effect="blur" src="https://it-cgg.b-cdn.net/rtp/rmj/provider/pgsoft.webp" style="width: 100px;"/>
-        <br/>PG SOFT
-        </li>
-        <li
-          @click="handleItemClick('Joker')"
-          :class="{
-            active: activeItem === 'Joker',
-            j0x73fx: activeItem === 'Joker',
-          }"
-        >
-        <nuxt-img loading="lazy" effect="blur" src="https://it-cgg.b-cdn.net/rtp/rmj/provider/joker.webp" style="width: 100px;"/>
-        <br/>JOKER
-        </li>
-        <li
-          @click="handleItemClick('MicroGaming')"
-          :class="{
-            active: activeItem === 'MicroGaming',
-            j0x73fx: activeItem === 'MicroGaming',
-          }"
-        >
-        <nuxt-img loading="lazy" effect="blur" src="https://it-cgg.b-cdn.net/rtp/rmj/provider/microgaming.webp" style="width: 100px;"/>
-        <br/>MICROGAMING
-        </li>
-        <li
-          @click="handleItemClick('Habanero')"
-          :class="{
-            active: activeItem === 'Habanero',
-            j0x73fx: activeItem === 'Habanero',
-          }"
-        >
-        <nuxt-img loading="lazy" effect="blur" src="https://it-cgg.b-cdn.net/rtp/rmj/provider/habanero.webp" style="width: 100px;"/>
-        <br/>HABANERO
-        </li>
+
+    <section class="container mb-4" style="margin-top: -70px !important;">
+      <div class="slot-sidebar">
+        <ul class="slot-sidebar-nav">
+            <li>
+                <li
+                @click="handleItemClick('Pragmatic Play')"
+                :class="{
+                  active: activeItem === 'Pragmatic Play',
+                  btnprovider: activeItem === 'Pragmatic Play',
+                }"
+                >
+                  <NuxtImg style="width: auto; height: 50px" src="https://it-cgg.b-cdn.net/rtp/rajazeus/provider/PP.webp" alt="RTP LIVE PRAGMATIC"/>
+                  <p class="long">PRAGMATIC PLAY</p>
+                  <p class="short">PP</p>
+                </li>
+            </li>
+            <li>
+                <li
+                @click="handleItemClick('CQ 9')"
+                :class="{
+                  active: activeItem === 'CQ 9',
+                  btnprovider: activeItem === 'CQ 9',
+                }"
+                >
+                  <NuxtImg style="width: auto; height: 50px" src="https://it-cgg.b-cdn.net/rtp/rajazeus/provider/SBOCQ9.webp" alt="RTP LIVE CQ9"/>
+                  <p class="long">CQ9</p>
+                  <p class="short">CQ9</p>
+                </li>
+            </li>
         </ul>
-    </div>
+        </div>
+
+        <div class="slot-sidebar">
+        <ul class="slot-sidebar-nav">
+            <li>
+                <li
+                @click="handleItemClick('PG SLOTS')"
+                :class="{
+                  active: activeItem === 'PG SLOTS',
+                  btnprovider: activeItem === 'PG SLOTS',
+                }"
+                >
+                  <NuxtImg style="width: auto; height: 50px" src="https://it-cgg.b-cdn.net/rtp/rajazeus/provider/PGSOFT.webp" alt="RTP LIVE PG SLOTS"/>
+                  <p class="long">PG SLOTS</p>
+                  <p class="short">PG SLOTS</p>
+                </li>
+            </li>
+            <li>
+                <li
+                @click="handleItemClick('Joker')"
+                :class="{
+                  active: activeItem === 'Joker',
+                  btnprovider: activeItem === 'Joker',
+                }"
+                >
+                  <NuxtImg style="width: auto; height: 50px" src="https://it-cgg.b-cdn.net/rtp/rajazeus/provider/JOKER.webp" alt="RTP LIVE JOKER"/>
+                  <p class="long">JOKER</p>
+                  <p class="short">JOKER</p>
+                </li>
+            </li>
+        </ul>
+        </div>
+
+        <div class="slot-sidebar">
+        <ul class="slot-sidebar-nav">
+            <li>
+                <li
+                @click="handleItemClick('SPADEGAMING')"
+                :class="{
+                  active: activeItem === 'SPADEGAMING',
+                  btnprovider: activeItem === 'SPADEGAMING',
+                }"
+                >
+                  <NuxtImg style="width: auto; height: 50px" src="https://it-cgg.b-cdn.net/rtp/rajazeus/provider/SPADEGAMING.webp" alt="RTP LIVE SPADEGAMING"/>
+                  <p class="long">SPADEGAMING</p>
+                  <p class="short">SPADEGAMING</p>
+                </li>
+            </li>
+            <li>
+                <li
+                @click="handleItemClick('Habanero')"
+                :class="{
+                  active: activeItem === 'Habanero',
+                  btnprovider: activeItem === 'Habanero',
+                }"
+                >
+                  <NuxtImg style="width: auto; height: 50px" src="https://it-cgg.b-cdn.net/rtp/rajazeus/provider/HABANERO.webp" alt="RTP LIVE HABANERO"/>
+                  <p class="long">HABANERO</p>
+                  <p class="short">HABANERO</p>
+                </li>
+            </li>
+            <li>
+                <li
+                @click="handleItemClick('MicroGaming')"
+                :class="{
+                  active: activeItem === 'MicroGaming',
+                  btnprovider: activeItem === 'MicroGaming',
+                }"
+                id="mobslot1"
+                >
+                  <NuxtImg style="width: auto; height: 50px" src="https://it-cgg.b-cdn.net/rtp/rajazeus/provider/MICROGAMING.webp" alt="RTP LIVE MICROGAMING"/>
+                  <p class="long">MICROGAMING</p>
+                  <p class="short">MICRAGAMING</p>
+                </li>
+            </li>
+        </ul>
+        </div>
+        
+    </section>
+    
     <div class="container">
       <div v-if="activeItem === 'Pragmatic Play'">
   
@@ -62,9 +119,9 @@
               </div>
               <div v-for="itemPragma in filteredPragmadata" :key="itemPragma.id" class="fugu-grid-item fugu-grid-item-w2 col-4 col-md-4 col-lg-2 wow fadeInUpX pgsoft">
               <div class="portfolio-item">
-                <a href="https://urlshortenertool.com/RTP-RM" rel="noopener noreferrer nofollow" target="_blank">
+                <a href="https://shortener.run/daftar-rz/?ref=mainbrsm" rel="noopener noreferrer nofollow" target="_blank">
                   <div class="thumb img-fluid">
-                    <nuxt-img loading="lazy" effect="blur" :alt="itemPragma.game_name" :src="itemPragma.img_src" style="width: 100%; height: auto" />
+                    <NuxtImg loading="lazy" effect="blur" :alt="itemPragma.game_name" :src="itemPragma.img_src" style="width: 100%; height: auto" />
                   </div>
                 </a>
                 <div class="progress-rtp">
@@ -82,9 +139,9 @@
               </div>
               <div v-for="itemPragma in filteredPragmadata" :key="itemPragma.id" class="fugu-grid-item fugu-grid-item-w2 col-4 col-md-4 col-lg-2 wow fadeInUpX pgsoft">
               <div class="portfolio-item">
-                <a href="https://urlshortenertool.com/RTP-RM" rel="noopener noreferrer nofollow" target="_blank">
+                <a href="https://shortener.run/daftar-rz/?ref=mainbrsm" rel="noopener noreferrer nofollow" target="_blank">
                   <div class="thumb img-fluid">
-                    <nuxt-img loading="lazy" effect="blur" :alt="itemPragma.game_name" :src="itemPragma.img_src" style="width: 100%; height: auto" />
+                    <NuxtImg loading="lazy" effect="blur" :alt="itemPragma.game_name" :src="itemPragma.img_src" style="width: 100%; height: auto" />
                   </div>
                 </a>
                 <div class="progress-rtp">
@@ -100,7 +157,7 @@
   
       </div>
   
-      <div v-if="activeItem === 'PG Soft'">
+      <div v-if="activeItem === 'PG SLOTS'">
   
         <div v-if="filteredPgsoftdata.length > 0" class="row">
           <div style="margin-bottom: 20px;">
@@ -108,9 +165,9 @@
           </div>
           <div v-for="itemPG in filteredPgsoftdata" :key="itemPG.id" class="fugu-grid-item fugu-grid-item-w2 col-4 col-md-4 col-lg-2 wow fadeInUpX pgsoft">
               <div class="portfolio-item">
-                  <a href="https://urlshortenertool.com/RTP-RM" rel="noopener noreferrer nofollow" target="_blank">
+                  <a href="https://shortener.run/daftar-rz/?ref=mainbrsm" rel="noopener noreferrer nofollow" target="_blank">
                       <div class="thumb img-fluid">
-                          <nuxt-img loading="lazy" effect="blur" :alt="itemPG.game_name" :src="itemPG.img_src" style="width: 100%; height: auto" />
+                          <NuxtImg loading="lazy" effect="blur" :alt="itemPG.game_name" :src="itemPG.img_src" style="width: 100%; height: auto" />
                       </div>
                   </a>
                   <div class="progress-rtp">
@@ -128,9 +185,9 @@
             </div>
             <div v-for="itemPG in filteredPgsoftdata" :key="itemPG.id" class="fugu-grid-item fugu-grid-item-w2 col-4 col-md-4 col-lg-2 wow fadeInUpX pgsoft">
                 <div class="portfolio-item">
-                    <a href="https://urlshortenertool.com/RTP-RM" rel="noopener noreferrer nofollow" target="_blank">
+                    <a href="https://shortener.run/daftar-rz/?ref=mainbrsm" rel="noopener noreferrer nofollow" target="_blank">
                         <div class="thumb img-fluid">
-                            <nuxt-img loading="lazy" effect="blur" :alt="itemPG.game_name" :src="itemPG.img_src" style="width: 100%; height: auto" />
+                            <NuxtImg loading="lazy" effect="blur" :alt="itemPG.game_name" :src="itemPG.img_src" style="width: 100%; height: auto" />
                         </div>
                     </a>
                     <div class="progress-rtp">
@@ -153,9 +210,9 @@
           </div>
           <div v-for="itemJoker in filteredJokerData" :key="itemJoker.id" class="fugu-grid-item fugu-grid-item-w2 col-4 col-md-4 col-lg-2 wow fadeInUpX pgsoft">
               <div class="portfolio-item">
-                  <a href="https://urlshortenertool.com/RTP-RM" rel="noopener noreferrer nofollow" target="_blank">
+                  <a href="https://shortener.run/daftar-rz/?ref=mainbrsm" rel="noopener noreferrer nofollow" target="_blank">
                       <div class="thumb img-fluid">
-                          <nuxt-img loading="lazy" effect="blur" :alt="itemJoker.game_name" :src="itemJoker.img_src" style="width: 100%; height: auto" />
+                          <NuxtImg loading="lazy" effect="blur" :alt="itemJoker.game_name" :src="itemJoker.img_src" style="width: 100%; height: auto" />
                       </div>
                   </a>
                   <div class="progress-rtp">
@@ -167,15 +224,15 @@
              </div>
         </div>
         <div v-else>
-          <div class="row">
             <div style="margin-bottom: 20px;">
                 <input type="text" v-model="queryJoker" placeholder="Cari games..." style="color: white !important"/>
             </div>
-            <div v-for="itemJoker in filteredPgsoftdata" :key="itemJoker.id" class="fugu-grid-itemJoker fugu-grid-itemJoker-w2 col-4 col-md-4 col-lg-2 wow fadeInUpX pgsoft">
-                <div class="portfolio-itemJoker">
-                    <a href="https://urlshortenertool.com/RTP-RM" rel="noopener noreferrer nofollow" target="_blank">
+            <div v-if="filteredJokerData.length > 0" class="row">
+            <div v-for="itemJoker in filteredJokerData" :key="itemJoker.id" class="fugu-grid-item fugu-grid-item-w2 col-4 col-md-4 col-lg-2 wow fadeInUpX pgsoft">
+                <div class="portfolio-item">
+                    <a href="https://shortener.run/daftar-rz/?ref=mainbrsm" rel="noopener noreferrer nofollow" target="_blank">
                         <div class="thumb img-fluid">
-                            <nuxt-img loading="lazy" effect="blur" :alt="itemJoker.game_name" :src="itemJoker.img_src" style="width: 100%; height: auto" />
+                            <NuxtImg loading="lazy" effect="blur" :alt="itemJoker.game_name" :src="itemJoker.img_src" style="width: 100%; height: auto" />
                         </div>
                     </a>
                     <div class="progress-rtp">
@@ -198,9 +255,9 @@
                 </div>
                 <div v-for="microItem in filteredeMicroData" :key="microItem.id" class="fugu-grid-item fugu-grid-item-w2 col-4 col-md-4 col-lg-2 wow fadeInUpX pgsoft">
                 <div class="portfolio-item">
-                  <a href="https://urlshortenertool.com/RTP-RM" rel="noopener noreferrer nofollow" target="_blank">
+                  <a href="https://shortener.run/daftar-rz/?ref=mainbrsm" rel="noopener noreferrer nofollow" target="_blank">
                     <div class="thumb img-fluid">
-                      <nuxt-img loading="lazy" effect="blur" :alt="microItem.game_name" :src="microItem.img_src" style="width: 100%; height: auto" />
+                      <NuxtImg loading="lazy" effect="blur" :alt="microItem.game_name" :src="microItem.img_src" style="width: 100%; height: auto" />
                     </div>
                   </a>
                   <div class="progress-rtp">
@@ -218,9 +275,9 @@
                 </div>
                 <div v-for="microItem in filteredeMicroData" :key="microItem.id" class="fugu-grid-item fugu-grid-item-w2 col-4 col-md-4 col-lg-2 wow fadeInUpX pgsoft">
                 <div class="portfolio-item">
-                  <a href="https://urlshortenertool.com/RTP-RM" rel="noopener noreferrer nofollow" target="_blank">
+                  <a href="https://shortener.run/daftar-rz/?ref=mainbrsm" rel="noopener noreferrer nofollow" target="_blank">
                     <div class="thumb img-fluid">
-                      <nuxt-img loading="lazy" effect="blur" :alt="microItem.game_name" :src="microItem.img_src" style="width: 100%; height: auto" />
+                      <NuxtImg loading="lazy" effect="blur" :alt="microItem.game_name" :src="microItem.img_src" style="width: 100%; height: auto" />
                     </div>
                   </a>
                   <div class="progress-rtp">
@@ -243,9 +300,9 @@
                 </div>
                 <div v-for="itemHabanero in filteredHabaneroData" :key="itemHabanero.id" class="fugu-grid-item fugu-grid-item-w2 col-4 col-md-4 col-lg-2 wow fadeInUpX pgsoft">
                 <div class="portfolio-item">
-                  <a href="https://urlshortenertool.com/RTP-RM" rel="noopener noreferrer nofollow" target="_blank">
+                  <a href="https://shortener.run/daftar-rz/?ref=mainbrsm" rel="noopener noreferrer nofollow" target="_blank">
                     <div class="thumb img-fluid">
-                      <nuxt-img loading="lazy" effect="blur" :alt="itemHabanero.game_name" :src="itemHabanero.img_src" style="width: 100%; height: auto" />
+                      <NuxtImg loading="lazy" effect="blur" :alt="itemHabanero.game_name" :src="itemHabanero.img_src" style="width: 100%; height: auto" />
                     </div>
                   </a>
                   <div class="progress-rtp">
@@ -263,9 +320,9 @@
                 </div>
                 <div v-for="itemHabanero in filteredHabaneroData" :key="itemHabanero.id" class="fugu-grid-item fugu-grid-item-w2 col-4 col-md-4 col-lg-2 wow fadeInUpX pgsoft">
                 <div class="portfolio-item">
-                  <a href="https://urlshortenertool.com/RTP-RM" rel="noopener noreferrer nofollow" target="_blank">
+                  <a href="https://shortener.run/daftar-rz/?ref=mainbrsm" rel="noopener noreferrer nofollow" target="_blank">
                     <div class="thumb img-fluid">
-                      <nuxt-img loading="lazy" effect="blur" :alt="itemHabanero.game_name" :src="itemHabanero.img_src" style="width: 100%; height: auto" />
+                      <NuxtImg loading="lazy" effect="blur" :alt="itemHabanero.game_name" :src="itemHabanero.img_src" style="width: 100%; height: auto" />
                     </div>
                   </a>
                   <div class="progress-rtp">
@@ -280,6 +337,102 @@
           </div>
   
         </div>    
+
+        <div v-if="activeItem === 'CQ 9'">
+  
+            <div v-if="filteredCQ9Data.length > 0" class="row">
+                  <div style="margin-bottom: 20px;">
+                    <input type="text" v-model="queryCQ9" placeholder="Cari games..." style="color: white !important"/>
+                  </div>
+                  <div v-for="itemCQ9 in filteredCQ9Data" :key="itemCQ9.id" class="fugu-grid-item fugu-grid-item-w2 col-4 col-md-4 col-lg-2 wow fadeInUpX pgsoft">
+                  <div class="portfolio-item">
+                    <a href="https://shortener.run/daftar-rz/?ref=mainbrsm" rel="noopener noreferrer nofollow" target="_blank">
+                      <div class="thumb img-fluid">
+                        <NuxtImg loading="lazy" effect="blur" :alt="itemCQ9.game_name" :src="itemCQ9.img_src" style="width: 100%; height: auto" />
+                      </div>
+                    </a>
+                    <div class="progress-rtp">
+                      <p class="rtp-style">RTP: {{ itemCQ9.number }} %</p>
+                      <div :class="['bg-progress-rtp', (itemCQ9.number < 55 && 'red') || (itemCQ9.number >= 55 && itemCQ9.number <= 75 && 'yellow') || (itemCQ9.number > 75 && 'green')]" :style="{ width: `${itemCQ9.number}%` }"></div>
+                    </div>
+                    <div class="down-content"><span>{{ itemCQ9.game_name }}</span></div>
+                  </div>
+                </div>
+            </div>
+            <div v-else>
+              <div class="row">
+                  <div style="margin-bottom: 20px;">
+                    <input type="text" v-model="queryCQ9" placeholder="Cari games..." style="color: white !important"/>
+                  </div>
+                  <div v-for="itemCQ9 in filteredCQ9Data" :key="itemCQ9.id" class="fugu-grid-item fugu-grid-item-w2 col-4 col-md-4 col-lg-2 wow fadeInUpX pgsoft">
+                  <div class="portfolio-item">
+                    <a href="https://shortener.run/daftar-rz/?ref=mainbrsm" rel="noopener noreferrer nofollow" target="_blank">
+                      <div class="thumb img-fluid">
+                        <NuxtImg loading="lazy" effect="blur" :alt="itemCQ9.game_name" :src="itemCQ9.img_src" style="width: 100%; height: auto" />
+                      </div>
+                    </a>
+                    <div class="progress-rtp">
+                      <p class="rtp-style">RTP: {{ itemCQ9.number }} %</p>
+                      <div :class="['bg-progress-rtp', (itemCQ9.number < 55 && 'red') || (itemCQ9.number >= 55 && itemCQ9.number <= 75 && 'yellow') || (itemCQ9.number > 75 && 'green')]" :style="{ width: `${itemCQ9.number}%` }"></div>
+                    </div>
+                    <div class="down-content"><span>{{ itemCQ9.game_name }}</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="text-center" style="color: white; animation: fadeIn 2s; width: 100%;">Data Game tidak ditemukan...</div>
+            </div>
+
+          </div>    
+
+          <div v-if="activeItem === 'SPADEGAMING'">
+  
+              <div v-if="filteredSpadeData.length > 0" class="row">
+                    <div style="margin-bottom: 20px;">
+                      <input type="text" v-model="querySpade" placeholder="Cari games..." style="color: white !important"/>
+                    </div>
+                    <div v-for="itemSpade in filteredSpadeData" :key="itemSpade.id" class="fugu-grid-item fugu-grid-item-w2 col-4 col-md-4 col-lg-2 wow fadeInUpX pgsoft">
+                    <div class="portfolio-item">
+                      <a href="https://shortener.run/daftar-rz/?ref=mainbrsm" rel="noopener noreferrer nofollow" target="_blank">
+                        <div class="thumb img-fluid">
+                          <NuxtImg loading="lazy" effect="blur" :alt="itemSpade.game_name" :src="itemSpade.img_src" style="width: 100%; height: auto" />
+                        </div>
+                      </a>
+                      <div class="progress-rtp">
+                        <p class="rtp-style">RTP: {{ itemSpade.number }} %</p>
+                        <div :class="['bg-progress-rtp', (itemSpade.number < 55 && 'red') || (itemSpade.number >= 55 && itemSpade.number <= 75 && 'yellow') || (itemSpade.number > 75 && 'green')]" :style="{ width: `${itemSpade.number}%` }"></div>
+                      </div>
+                      <div class="down-content"><span>{{ itemSpade.game_name }}</span></div>
+                    </div>
+                  </div>
+              </div>
+              <div v-else>
+                <div class="row">
+                    <div style="margin-bottom: 20px;">
+                      <input type="text" v-model="querySpade" placeholder="Cari games..." style="color: white !important"/>
+                    </div>
+                    <div v-for="itemSpade in filteredSpadeData" :key="itemSpade.id" class="fugu-grid-item fugu-grid-item-w2 col-4 col-md-4 col-lg-2 wow fadeInUpX pgsoft">
+                    <div class="portfolio-item">
+                      <a href="https://shortener.run/daftar-rz/?ref=mainbrsm" rel="noopener noreferrer nofollow" target="_blank">
+                        <div class="thumb img-fluid">
+                          <NuxtImg loading="lazy" effect="blur" :alt="itemSpade.game_name" :src="itemSpade.img_src" style="width: 100%; height: auto" />
+                        </div>
+                      </a>
+                      <div class="progress-rtp">
+                        <p class="rtp-style">RTP: {{ itemSpade.number }} %</p>
+                        <div :class="['bg-progress-rtp', (itemSpade.number < 55 && 'red') || (itemSpade.number >= 55 && itemSpade.number <= 75 && 'yellow') || (itemSpade.number > 75 && 'green')]" :style="{ width: `${itemSpade.number}%` }"></div>
+                      </div>
+                      <div class="down-content"><span>{{ itemSpade.game_name }}</span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-center" style="color: white; animation: fadeIn 2s; width: 100%;">Data Game tidak ditemukan...</div>
+              </div>
+
+            </div>    
+
+
+
+
     </div>
   </template>
   
@@ -299,11 +452,15 @@
         queryJoker: '',
         queryMicro: '',
         queryHabanero: '',
+        querySpade: '',
+        queryCQ9: '',
         pragmadata: [],
         pgsoftdata: [],
         jokerdata: [],
         microdata: [],
-        habanerodata: []
+        habanerodata: [],
+        spadedata: [],
+        cq9data: [],
       };
     },
     mounted() {
@@ -312,6 +469,8 @@
       this.fetchJoker();
       this.fetchMicro();
       this.fetchHabanero();
+      this.fetchSpade();
+      this.fetchCQ9();
       this.intervalId = setInterval(() => {
         this.switchImage();
       }, 2000); 
@@ -328,7 +487,7 @@
           const responsePragma = await $fetch('https://152.42.160.119/data/nuxt/pragmatic', {
             method: 'GET',
             headers: {
-              'Cache-Control': 'no-cache',
+              'Cache-Control': "no-store"
             }
           });
           const jsonPragma = responsePragma.data;
@@ -342,7 +501,7 @@
           const responsePg = await $fetch('https://152.42.160.119/data/nuxt/pgsoft', {
             method: 'GET',
             headers: {
-              'Cache-Control': 'no-cache',
+              'Cache-Control': "no-store"
             }
           });
           const jsonPg = responsePg.data;
@@ -356,7 +515,7 @@
           const responseJoker = await $fetch('https://152.42.160.119/data/nuxt/joker', {
             method: 'GET',
             headers: {
-              'Cache-Control': 'no-cache',
+              'Cache-Control': "no-store"
             }
           });
           const jsonJoker = responseJoker.data;
@@ -370,7 +529,7 @@
           const responseMicro = await $fetch('https://152.42.160.119/data/nuxt/microgaming', {
             method: 'GET',
             headers: {
-              'Cache-Control': 'no-cache',
+              'Cache-Control': "no-store"
             }
           });
           const jsonMicro = responseMicro.data;
@@ -384,7 +543,7 @@
           const responseHabanero = await $fetch('https://152.42.160.119/data/nuxt/habanero', {
             method: 'GET',
             headers: {
-              'Cache-Control': 'no-cache',
+              'Cache-Control': "no-store"
             }
           });
           const jsonHabanero = responseHabanero.data;
@@ -393,9 +552,37 @@
           console.log("Error fetching", error);
         }
       },
+      async fetchSpade() {
+      try {
+          const responseSpade = await $fetch('https://152.42.160.119/data/nuxt/spadegaming', {
+            method: 'GET',
+            headers: {
+              'Cache-Control': "no-store"
+            }
+          });
+          const jsonSpade = responseSpade.data;
+          this.spadedata = jsonSpade; 
+        } catch (error) {
+          console.log("Error fetching", error);
+        }
+    },
+    async fetchCQ9() {
+      try {
+          const responseCQ9 = await $fetch('https://152.42.160.119/data/nuxt/cq9', {
+            method: 'GET',
+            headers: {
+              'Cache-Control': "no-store"
+            }
+          });
+          const jsonCQ9 = responseCQ9.data;
+          this.cq9data = jsonCQ9; 
+        } catch (error) {
+          console.log("Error fetching", error);
+        }
+    },
       switchImage() {
         this.currentIndex = (this.currentIndex + 1) % this.hotimages.length;
-        this.$forceUpdate(); // Force a re-render of the component
+        this.$forceUpdate(); 
       },
     },
     computed: {
@@ -422,6 +609,12 @@
       },
       filteredHabaneroData() {
         return this.habanerodata.filter(item => item.game_name.toLowerCase().includes(this.queryHabanero.toLowerCase()));
+      },
+      filteredSpadeData() {
+        return this.spadedata.filter(item => item.game_name.toLowerCase().includes(this.querySpade.toLowerCase()));
+      },
+      filteredCQ9Data() {
+        return this.cq9data.filter(item => item.game_name.toLowerCase().includes(this.queryCQ9.toLowerCase()));
       }
       
     },

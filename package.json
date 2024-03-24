@@ -5,7 +5,7 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "start": "deno ./.output/server/index.ts",
+    "start": "node ./.output/server/index.ts",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
